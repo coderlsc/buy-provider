@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>我的</title>
+    <object th:include="head :: meta" th:remove="tag" />
+</head>
+<body>
+<!--/*@thymesVar id="user" type="com.qdu.buy.domain.po.User"*/-->
+<!--/*@thymesVar id="createTime" type="java.util.Date"*/-->
+    <h1>登录成功 欢迎您！</h1>
+    <h3 th:text="${user.userName}"/>
+    <h3 th:text="${#dates.format(user.createTime, 'yyyy-MM-dd HH:mm:ss')}"/>
+</body>
+</html>

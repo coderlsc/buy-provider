@@ -1,0 +1,1211 @@
+14:18:01.906[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:05.193[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:18:05.286[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:05.287[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:05.321[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:05.321[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:05.348[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:05.348[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:05.394[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:05.394[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:10.241[][] dist [http-nio-8081-exec-4] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:18:10.246[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:10.246[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:14.000[][] dist [http-nio-8081-exec-6] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:18:14.001[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:14.001[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:15.723[][] dist [http-nio-8081-exec-3] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:18:15.725[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:15.726[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:15.939[][] dist [http-nio-8081-exec-7] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:18:15.941[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:15.941[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:16.434[][] dist [http-nio-8081-exec-5] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:18:16.436[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:16.436[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:21.270[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:18:21.351[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:21.351[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:21.378[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:21.378[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:21.401[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:21.401[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:21.437[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:21.438[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:23.154[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:18:23.222[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:23.222[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:23.255[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:23.255[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:23.290[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:23.290[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:23.315[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:23.315[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:24.266[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:18:24.346[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:24.347[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:24.378[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:24.378[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:24.433[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:24.434[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:24.448[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:24.449[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:28.008[][] dist [http-nio-8081-exec-3] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:18:28.011[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:28.011[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:33.574[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:34.254[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:34.443[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:34.619[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:49.430[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:52.094[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:18:53.744[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:18:53.823[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:53.823[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:53.846[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:53.847[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:53.871[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:53.871[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:18:53.912[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:18:53.912[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:24:19.880[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:24:19.995[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:24:19.995[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:24:20.032[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:24:20.032[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:24:20.060[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:24:20.060[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:24:20.195[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:24:20.196[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:28.079[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:25:28.166[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:28.166[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:28.197[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:28.197[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:28.220[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:28.220[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:28.230[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:28.230[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:37.482[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:25:37.563[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:37.564[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:37.588[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:37.589[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:37.620[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:37.620[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:37.635[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:37.635[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:45.587[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:25:45.666[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:45.666[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:45.702[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:45.702[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:45.733[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:45.733[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:25:45.759[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:25:45.760[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:28:01.644[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:28:01.645[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:28:01.649[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:30:12.015[][] dist [restartedMain] INFO  com.qdu.buy.DistWebApplication - The following profiles are active: dev
+14:30:12.035[][] dist [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c5ace43: startup date [Sat Mar 24 14:30:12 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@48cf41bd
+14:30:13.711[][] dist [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+14:30:13.755[][] dist [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:30:13.981[][] dist [restartedMain] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+14:30:14.238[][] dist [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b061705-6547-30a3-8087-2ae02a7b2a22
+14:30:14.257[][] dist [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:30:14.459[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b645de00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.510[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ff58141e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.533[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$f3cbd8c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.572[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.583[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.590[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$a45d751c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.598[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration$$EnhancerBySpringCGLIB$$fbe8638d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.624[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.631[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConnectionConfiguration$$EnhancerBySpringCGLIB$$4a40050f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.676[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.715[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.732[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.734[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:14.783[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d25fe0fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:30:15.555[][] dist [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+14:30:15.567[][] dist [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:30:15.569[][] dist [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+14:30:15.725[][] dist [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/buy] - Initializing Spring embedded WebApplicationContext
+14:30:15.725[][] dist [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3690 ms
+14:30:16.115[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:30:16.122[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+14:30:16.122[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:30:16.122[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+14:30:16.122[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+14:30:16.974[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.BaseController.toIndex()
+14:30:16.975[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toLogin]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.BaseController.tologin()
+14:30:16.979[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.UserController.index()
+14:30:16.980[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.UserController.login(com.qdu.buy.domain.po.User,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+14:30:16.980[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/welcome],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.UserController.welcome()
+14:30:16.982[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:30:16.983[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:30:17.016[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+14:30:17.043[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/*/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:30:17.043[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:30:17.043[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:30:17.344[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c5ace43: startup date [Sat Mar 24 14:30:12 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@48cf41bd
+14:30:17.352[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+14:30:17.411[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+14:30:19.041[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.042[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+14:30:19.044[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.046[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+14:30:19.047[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+14:30:19.047[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.048[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+14:30:19.048[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.049[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+14:30:19.049[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+14:30:19.049[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+14:30:19.050[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.050[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+14:30:19.051[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+14:30:19.052[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.054[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+14:30:19.055[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.055[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.056[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+14:30:19.057[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+14:30:19.057[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.059[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+14:30:19.061[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.061[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.061[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+14:30:19.062[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+14:30:19.363[][] dist [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+14:30:20.014[][] dist [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:30:20.148[][] dist [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:30:20.148[][] dist [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:30:20.158[][] dist [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:30:20.158[][] dist [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:30:20.435[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:30:20.436[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+14:30:20.447[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+14:30:20.447[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+14:30:20.449[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+14:30:20.450[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+14:30:20.450[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+14:30:20.453[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+14:30:20.468[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+14:30:20.486[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+14:30:20.502[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=c5ace43,type=ConfigurationPropertiesRebinder]
+14:30:20.509[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+14:30:20.513[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+14:30:20.514[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+14:30:21.033[][] dist [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+14:30:21.035[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+14:30:21.044[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+14:30:21.057[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+14:30:21.059[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+14:30:21.061[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+14:30:21.064[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+14:30:21.066[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+14:30:21.069[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+14:30:21.076[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+14:30:21.079[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+14:30:21.081[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+14:30:21.083[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+14:30:21.085[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+14:30:21.088[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+14:30:21.171[][] dist [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+14:30:21.180[][] dist [restartedMain] INFO  com.qdu.buy.DistWebApplication - Started DistWebApplication in 11.72 seconds (JVM running for 12.657)
+14:33:58.733[][] dist [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/buy] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:33:58.733[][] dist [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+14:33:58.765[][] dist [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+14:33:58.821[][] dist [http-nio-8081-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+14:33:58.930[][] dist [http-nio-8081-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+14:33:58.931[][] dist [http-nio-8081-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+14:33:58.931[][] dist [http-nio-8081-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+14:33:58.931[][] dist [http-nio-8081-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+14:33:58.936[][] dist [http-nio-8081-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+14:33:58.936[][] dist [http-nio-8081-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+14:33:59.368[][] dist [http-nio-8081-exec-2] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-2] Exception processing template "index": Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)
+14:33:59.428[][] dist [http-nio-8081-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/buy] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getAttribute(java.lang.String) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:144)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:73)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:87)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:42)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:32)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324)
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:139)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120)
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:66)
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+14:33:59.446[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:33:59.454[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:33:59.476[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:33:59.520[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:03.338[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:03.338[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:03.340[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:03.341[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:03.352[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:03.352[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:03.356[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:03.356[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:03.359[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:03.367[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:03.373[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:03.379[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:03.851[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:03.941[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:04.069[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:09.969[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:12.828[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:12.828[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:12.836[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:12.837[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:12.838[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:12.839[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:12.849[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:12.866[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:12.866[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:34:12.866[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:34:12.874[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:12.882[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:13.910[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:13.957[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:34:13.982[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:23.979[][] dist [http-nio-8081-exec-2] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-2] Exception processing template "index": Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)
+14:36:23.982[][] dist [http-nio-8081-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/buy] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getAttribute(java.lang.String) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:144)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:73)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:87)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:42)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:32)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324)
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:139)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120)
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:66)
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+14:36:23.990[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:23.990[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:23.997[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:28.987[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:28.987[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:28.993[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:28.993[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:29.000[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:29.001[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:29.005[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:29.005[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:29.009[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:29.023[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:29.031[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:29.038[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:29.434[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:29.454[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:29.460[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:32.651[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:32.652[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:32.659[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:32.671[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:32.671[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:32.701[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:32.715[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:32.716[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:32.746[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:32.747[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:32.759[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:32.806[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:35.259[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:35.260[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:35.268[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:35.279[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:35.281[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:35.312[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:35.312[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:35.317[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:35.317[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:35.328[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:35.348[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:35.356[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:37.641[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:37.641[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:37.649[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:37.655[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:37.656[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:37.684[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:37.684[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:37.684[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:37.684[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:37.689[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:37.790[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:37.796[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:40.265[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:40.265[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:40.271[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:40.281[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:40.281[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:40.308[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:40.308[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:40.310[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:40.310[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:40.322[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:40.342[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:40.349[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:49.807[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:49.807[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:49.818[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:49.818[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:49.824[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:49.825[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:49.825[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:49.827[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:49.827[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:49.832[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:49.837[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:49.842[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:49.937[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:49.983[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:50.011[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:56.808[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:56.808[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:56.810[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:56.810[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:56.810[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:56.810[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:56.813[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:36:56.813[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:36:56.817[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:56.823[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:56.828[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:56.833[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:58.585[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:58.615[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:36:58.632[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:05.832[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:05.832[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:05.843[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:05.852[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:05.853[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:05.884[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:05.884[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:05.885[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:05.885[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:05.897[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:05.916[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:05.922[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:11.175[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:11.175[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:11.179[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:11.179[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:11.180[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:11.180[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:11.182[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:11.182[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:11.190[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:11.195[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:11.200[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:11.204[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:19.726[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:19.726[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:19.728[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:19.728[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:19.729[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:19.729[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:19.729[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:19.729[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:19.740[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:19.746[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:19.759[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:19.764[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:20.564[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:20.565[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:20.574[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:20.587[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:20.588[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:20.627[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:20.627[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:20.628[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:20.628[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:20.643[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:20.690[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:20.696[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.049[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.049[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.062[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.071[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.072[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.107[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.107[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.107[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.108[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.116[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.138[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.144[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.838[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.838[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.845[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.853[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.854[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.880[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.880[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.884[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:21.884[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:21.893[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.913[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:21.919[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:22.508[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:22.509[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:22.515[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:22.524[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:22.524[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:22.556[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:22.557[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:22.556[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:22.557[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:22.569[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:22.589[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:22.595[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.107[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.107[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.154[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.154[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.155[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.155[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.154[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.155[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.162[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.187[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.192[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.198[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.804[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.805[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.811[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.821[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.821[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.848[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.849[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.852[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:23.852[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:23.861[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.880[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:23.887[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:24.427[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:24.427[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:24.463[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:24.463[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:24.463[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:24.463[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:24.467[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:24.468[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:24.473[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:24.500[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:24.505[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:24.511[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:26.165[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:26.165[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:26.173[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:26.181[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:26.181[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:26.185[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:26.192[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:26.192[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:26.194[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:26.204[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:26.204[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:26.239[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:28.346[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:28.346[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:28.355[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:28.362[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:28.362[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:28.391[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:28.391[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:28.393[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:37:28.394[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:37:28.405[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:28.428[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:37:28.433[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:38:25.358[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:25.358[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:38:25.365[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:38:25.380[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:25.380[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:38:25.429[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:25.430[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:38:25.430[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:25.430[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:38:25.438[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:38:25.459[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:38:25.465[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:38:29.129[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:38:30.758[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:38:30.886[][] dist [http-nio-8081-exec-8] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:38:31.281[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:31.281[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:31.330[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:31.330[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:31.346[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:31.347[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:31.354[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:31.354[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:37.076[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:38:37.148[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:37.148[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:37.187[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:37.187[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:37.214[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:37.214[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:37.240[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:37.240[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:38.928[][] dist [http-nio-8081-exec-4] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:38:38.933[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:38.933[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:42.574[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:38:42.638[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:42.638[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:42.663[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:42.663[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:42.689[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:42.690[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:42.698[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:42.698[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:53.302[][] dist [http-nio-8081-exec-1] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:38:53.303[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:53.304[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:58.988[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:38:59.069[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:59.070[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:59.096[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:59.096[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:59.121[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:59.121[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:38:59.142[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:38:59.142[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:08.837[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:39:08.900[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:08.900[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:08.927[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:08.927[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:08.951[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:08.951[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:09.228[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:09.228[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:12.388[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:39:12.462[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:12.462[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:12.485[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:12.485[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:12.503[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:12.503[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:12.503[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:12.504[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:16.239[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:39:16.362[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:16.362[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:16.393[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:16.394[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:16.435[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:16.435[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:16.580[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:16.580[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:21.132[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:39:21.236[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:21.236[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:21.265[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:21.266[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:21.298[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:21.298[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:21.444[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:21.444[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:23.536[][] dist [http-nio-8081-exec-7] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+14:39:23.538[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:23.538[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:25.680[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:25.680[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:25.712[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:25.712[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:25.743[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:25.744[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:25.895[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:25.896[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:26.930[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:39:27.045[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:27.045[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:27.077[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:27.077[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:27.102[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:27.102[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:27.273[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:27.274[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:43.260[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+14:39:43.363[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:43.363[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:43.395[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:43.395[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:43.423[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:43.423[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:43.584[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:43.585[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:45.626[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:45.627[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:45.656[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:45.656[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:45.690[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:45.690[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:45.820[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:45.821[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:47.612[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:47.612[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:47.653[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:47.653[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:47.680[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:47.680[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:47.828[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:47.829[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:51.653[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:51.653[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:51.676[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:51.676[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:51.704[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:51.704[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:39:51.837[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:39:51.837[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+14:49:53.855[][] dist [http-nio-8081-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-3] Exception processing template "index": Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)
+14:49:53.857[][] dist [http-nio-8081-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/buy] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getAttribute(java.lang.String) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:144)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:73)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:87)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:42)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:32)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324)
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:139)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120)
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:66)
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+14:49:53.859[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:49:53.860[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:49:53.865[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:00.934[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:00.934[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:00.935[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:00.935[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:00.938[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:00.938[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:00.940[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:00.941[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:00.947[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:00.952[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:00.957[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:00.961[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:01.235[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:01.235[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:01.313[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:01.321[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:01.321[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:01.337[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:01.344[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:01.345[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:01.451[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:01.451[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:01.478[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:01.688[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:05.242[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:05.242[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:05.303[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:05.310[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:05.310[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:05.337[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:05.346[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:05.346[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:05.454[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:05.454[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:05.467[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:05.666[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:06.387[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:06.387[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:06.398[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:06.407[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:06.407[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:06.456[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:06.462[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:06.462[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:06.481[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:06.585[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:06.586[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:06.706[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:06.940[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:06.940[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.007[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.489[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.489[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.502[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.508[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.509[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.556[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.562[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.562[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.576[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.581[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.581[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.618[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.674[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.674[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.743[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.743[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.776[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.794[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:07.802[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:07.802[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:07.823[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:08.698[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:08.699[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:08.705[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:08.712[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:08.712[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:08.725[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:08.733[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:08.733[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:08.782[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:08.882[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:08.882[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:08.952[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:09.168[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:09.169[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:09.208[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:43.993[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:43.993[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:44.057[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:44.067[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:44.067[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:44.084[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:44.095[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:44.095[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:44.198[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:50:44.198[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:50:44.205[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:50:44.480[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:41.809[][] dist [http-nio-8081-exec-10] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] Exception processing template "index": Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)
+14:59:41.811[][] dist [http-nio-8081-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/buy] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#httpSession.getAttribute('user')==null" (index:28)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getAttribute(java.lang.String) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:144)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:73)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:87)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:42)
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:32)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324)
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:139)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120)
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:66)
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+14:59:41.813[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:41.814[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:41.818[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.302[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.302[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.328[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.338[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.338[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.427[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.434[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.434[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.449[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.491[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.491[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.576[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.582[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.582[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.660[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.660[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.677[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.695[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.695[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:47.699[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.732[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:47.975[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:47.975[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:48.047[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.511[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.511[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.511[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.511[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.513[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.513[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.515[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.515[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.523[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.531[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.550[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.586[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.614[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.614[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.643[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.654[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.654[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.749[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.757[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.758[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.779[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:51.841[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.841[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.880[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:51.880[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:51.895[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:52.016[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:52.016[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:52.024[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:52.031[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+14:59:52.031[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+14:59:52.057[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:52.062[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+14:59:54.134[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================

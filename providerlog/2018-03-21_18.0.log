@@ -1,0 +1,11 @@
+18:01:05.019[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:06:05.025[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:11:05.025[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:16:05.026[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:21:05.027[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:26:05.029[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:31:05.030[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:56:19.888[][] dist [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-BUY-PROVIDER/LAPTOP-QP6HMOAK:microservice-buy-provider:8081 - Re-registering apps/MICROSERVICE-BUY-PROVIDER
+18:56:19.889[][] dist [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-BUY-PROVIDER/LAPTOP-QP6HMOAK:microservice-buy-provider:8081: registering service...
+18:56:19.911[][] dist [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-BUY-PROVIDER/LAPTOP-QP6HMOAK:microservice-buy-provider:8081 - registration status: 204
+18:56:47.990[][] dist [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
