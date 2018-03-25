@@ -22,13 +22,19 @@ public class BaseController {
     //去首页
     @RequestMapping(value = "toIndex")
     public ModelAndView toIndex(){
-        return new ModelAndView("index");
+        ModelAndView modelAndView=new ModelAndView("index");
+        return modelAndView;
     }
 
     //去首页
     @RequestMapping(value = "toRegister")
     public String toRegister(){
-        return "redirect:/register";
+        return "register";
+    }
+
+    @RequestMapping(value="index")
+    public String index(){
+        return "index";
     }
 
 

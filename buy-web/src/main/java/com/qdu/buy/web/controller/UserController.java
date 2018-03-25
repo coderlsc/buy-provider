@@ -3,23 +3,19 @@ package com.qdu.buy.web.controller;
 
 //用户接口层
 
-import com.bwton.dist.annotation.OperationLog;
-import com.qdu.buy.domain.UserQuery;
 import com.qdu.buy.domain.po.User;
-import com.qdu.buy.domain.vo.UserVo;
 import com.qdu.buy.user.UserService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
-import java.util.Map;
 
 @RestController
 @Api(value = "/user", description = "用户管理接口")
@@ -59,7 +55,7 @@ public class UserController {
             result.addObject("msg","用户名或密码错误");
         }
         else{
-            result.setViewName("index");
+            result.setViewName("redirect:/toIndex");
             result.addObject("user",user1);
             session.setAttribute("user",user);
         }
