@@ -16,7 +16,7 @@ public interface UserDao {
 
 
     /**
-     * 根据用户名查询用户
+     * 根据用户名查询用户基本信息
      * @param userName
      * @return
      */
