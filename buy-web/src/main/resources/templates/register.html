@@ -26,7 +26,7 @@
 <div class="res-banner">
     <div class="res-main">
         <div class="login-banner-bg"><span></span><img src="../images/big.jpg" th:src="@{/images/big.jpg}"  /></div>
-        <div class="login-box" style="margin-right: 300px; height: 600px; ">
+        <div class="login-box" style="margin-right: 100px; height: 600px; ">
 
             <div class="am-tabs" id="doc-my-tabs">
                 <ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
@@ -36,7 +36,7 @@
 
                 <div class="am-tabs-bd">
                     <div class="am-tab-panel am-active">
-                        <form method= "post">
+                        <form method= "post" action="" th:action="@{/user/register}">
 
                             <div class="user-name">
                                 <label for="companyName"><i class="am-icon-edit"></i></label>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="user-email">
                                 <label for="email"><i class="am-icon-envelope-o"></i></label>
-                                <input type="email" name="" id="email" placeholder="请输入邮箱账号"/>
+                                <input type="email" name="" id="email" placeholder="请输入邮箱账号并作为登录账号"/>
                             </div>
                             <div class="user-pass">
                                 <label for="password1"><i class="am-icon-lock"></i></label>
@@ -103,7 +103,7 @@
                         </form>
                         <div class="login-links">
                             <label for="reader-me">
-                                <input id="reader-me" type="checkbox"/> 点击表示您同意商城《服务协议》
+                                <input id="reader-me" type="checkbox"/>点击表示您同意商城 《服务协议》
                             </label>
                         </div>
                         <div class="am-cf">
@@ -128,7 +128,7 @@
     <div class="footer ">
         <div class="footer-hd ">
             <p>
-                <a href="# ">恒望科技</a>
+                <a href="# ">三炮科技</a>
                 <b>|</b>
                 <a href="# ">商城首页</a>
                 <b>|</b>
@@ -139,11 +139,11 @@
         </div>
         <div class="footer-bd ">
             <p>
-                <a href="# ">关于恒望</a>
+                <a href="# ">关于三炮</a>
                 <a href="# ">合作伙伴</a>
                 <a href="# ">联系我们</a>
                 <a href="# ">网站地图</a>
-                <em>© 2015-2025 Hengwang.com 版权所有. 更多模板 <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></em>
+                <em>© 2015-2025 三炮.com 版权所有 <a href="http://www.cssmoban.com/" target="_blank" title="三炮之家">三炮之家</a> - Collect from</em>
             </p>
         </div>
     </div>

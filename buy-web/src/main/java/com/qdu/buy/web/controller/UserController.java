@@ -62,4 +62,27 @@ public class UserController {
         return result;
     }
 
+    @PostMapping(value = "/register")
+    public ModelAndView register(User user, HttpServletRequest request) throws Exception {
+        log.info("进入register部分-------------"+user.getUserName()+user.getPassword());
+        //获取登录用户名和密码
+
+        //获取对应的数据  插入到数据库
+        String userName = user.getUserName();
+        String password = user.getPassword();
+        User user1=userService.verifyUser(userName,password);
+        ModelAndView result=new ModelAndView();
+        HttpSession session=request.getSession();
+        if(user1==null){
+            result.setViewName("login");
+            result.addObject("msg","用户名或密码错误");
+        }
+        else{
+            result.setViewName("redirect:/toIndex");
+            result.addObject("user",user1);
+            session.setAttribute("user",user);
+        }
+        return result;
+    }
+
 }
