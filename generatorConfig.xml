@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+ <!-- 引入配置文件 -->  
+    <properties resource="jdbc.properties"/>  
+    <!-- 指定数据库链接jar包驱动所在位置 -->
+  <classPathEntry location="D:\work\lib\mysql-connector-java-5.1.34.jar"/>
+
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+
+  	   <!-- 注释 -->  
+        <commentGenerator >  
+            <property name="suppressAllComments" value="true"/><!-- 是否取消注释 -->  
+            <property name="suppressDate" value="false" /> <!-- 是否生成注释代时间戳-->  
+        </commentGenerator>        
+    <jdbcConnection driverClass="${jdbc.driverClassName}"
+        connectionURL="${jdbc.url}"
+        userId="${jdbc.username}"
+        password="${jdbc.password}">
+    </jdbcConnection>
+	
+    <!-- 类型转换 -->  
+        <javaTypeResolver>  
+            <!-- 是否使用bigDecimal， false可自动转化以下类型（Long, Integer, Short, etc.） -->  
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+    <javaModelGenerator targetPackage="com.qdu.buy.domain.po"
+     targetProject="buy-provider/src">
+      <property name="enableSubPackages" value="false" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+    
+	  <!-- 生成mapxml文件 -->  
+    <sqlMapGenerator targetPackage="com.qdu.buy.dao"
+      targetProject="buy-provider/src">
+      <property name="enableSubPackages" value="false" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER"
+     targetPackage="com.qdu.buy.dao" 
+      targetProject="buy-provider/src">
+      <property name="enableSubPackages" value="false" />
+    </javaClientGenerator>
+
+
+
+
+<!--生成表和实体类的对应关系 -->
+
+  		<table tableName="company" domainObjectName="Company"    
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"    
+               enableSelectByExample="false" selectByExampleQueryId="false" >    
+            <property name="useActualColumnNames" value="false"/>
+            
+        </table>    
+        
+	  <!--   <table schema="scott" tableName="book_admin"
+	     domainObjectName="Book_Admin" >
+	      <property name="useActualColumnNames" value="false"/>
+	      <generatedKey column="id" 
+	      sqlStatement="select sys_guid() as id from dual" 
+	      identity="false" />
+	    </table> -->
+
+  </context>
+</generatorConfiguration>
