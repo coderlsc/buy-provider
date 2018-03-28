@@ -1,0 +1,284 @@
+11:05:54.935[][] dist [restartedMain] INFO  com.qdu.buy.DistWebApplication - The following profiles are active: dev
+11:05:54.959[][] dist [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65731ad1: startup date [Mon Mar 26 11:05:54 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6a078378
+11:05:57.121[][] dist [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+11:05:57.166[][] dist [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:05:57.390[][] dist [restartedMain] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+11:05:57.675[][] dist [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b061705-6547-30a3-8087-2ae02a7b2a22
+11:05:57.695[][] dist [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11:05:57.913[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$83195911] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:57.986[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$cc2b8f2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.014[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$c09f53d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.061[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.074[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.080[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$7130f02d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.090[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration$$EnhancerBySpringCGLIB$$c8bbde9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.118[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.129[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConnectionConfiguration$$EnhancerBySpringCGLIB$$17138020] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.191[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.225[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.239[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.240[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:58.289[][] dist [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9f335c0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:05:59.058[][] dist [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+11:05:59.074[][] dist [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:05:59.075[][] dist [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+11:05:59.232[][] dist [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/buy] - Initializing Spring embedded WebApplicationContext
+11:05:59.232[][] dist [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4273 ms
+11:05:59.545[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+11:05:59.553[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+11:05:59.554[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:05:59.554[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+11:05:59.554[][] dist [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+11:06:00.515[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.qdu.buy.web.controller.BaseController.index()
+11:06:00.516[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.BaseController.toIndex()
+11:06:00.516[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toRegister]}" onto public java.lang.String com.qdu.buy.web.controller.BaseController.toRegister()
+11:06:00.516[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toLogin]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.BaseController.tologin()
+11:06:00.520[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.UserController.index()
+11:06:00.521[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.UserController.login(com.qdu.buy.domain.po.User,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+11:06:00.521[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/welcome],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.qdu.buy.web.controller.UserController.welcome()
+11:06:00.525[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:06:00.526[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:06:00.558[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+11:06:00.591[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/*/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:06:00.591[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:06:00.591[][] dist [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:06:00.903[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65731ad1: startup date [Mon Mar 26 11:05:54 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6a078378
+11:06:00.910[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+11:06:00.958[][] dist [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+11:06:02.777[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+11:06:02.777[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+11:06:02.778[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.780[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.780[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.781[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+11:06:02.782[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+11:06:02.783[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+11:06:02.784[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.785[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+11:06:02.785[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.786[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.787[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.788[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.789[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+11:06:02.791[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+11:06:02.792[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+11:06:02.792[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.792[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.793[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+11:06:02.793[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+11:06:02.793[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+11:06:02.794[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:02.795[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+11:06:02.795[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+11:06:02.796[][] dist [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+11:06:03.181[][] dist [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+11:06:04.294[][] dist [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:06:04.496[][] dist [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:06:04.496[][] dist [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:06:04.523[][] dist [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:06:04.523[][] dist [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:06:04.755[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:06:04.756[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11:06:04.765[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+11:06:04.769[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+11:06:04.771[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+11:06:04.771[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+11:06:04.771[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+11:06:04.774[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+11:06:04.803[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+11:06:04.822[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+11:06:04.841[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=65731ad1,type=ConfigurationPropertiesRebinder]
+11:06:04.847[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+11:06:04.852[][] dist [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+11:06:04.853[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+11:06:05.268[][] dist [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+11:06:05.270[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+11:06:05.279[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+11:06:05.292[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+11:06:05.294[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+11:06:05.298[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+11:06:05.301[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+11:06:05.307[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+11:06:05.310[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+11:06:05.318[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+11:06:05.320[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+11:06:05.324[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+11:06:05.367[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+11:06:05.374[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+11:06:05.376[][] dist [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+11:06:05.475[][] dist [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+11:06:05.488[][] dist [restartedMain] INFO  com.qdu.buy.DistWebApplication - Started DistWebApplication in 12.8 seconds (JVM running for 14.729)
+11:06:13.528[][] dist [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/buy] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:06:13.528[][] dist [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:06:13.560[][] dist [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+11:06:13.605[][] dist [http-nio-8081-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+11:06:13.662[][] dist [http-nio-8081-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+11:06:13.663[][] dist [http-nio-8081-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+11:06:13.663[][] dist [http-nio-8081-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+11:06:13.663[][] dist [http-nio-8081-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+11:06:13.668[][] dist [http-nio-8081-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+11:06:13.668[][] dist [http-nio-8081-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+11:06:14.309[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:06:14.341[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:06:14.350[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:06:14.354[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:06:14.357[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:06:14.357[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:06:14.436[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:06:14.436[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:06:14.444[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:14.470[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:14.478[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:14.484[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:14.606[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:14.697[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:14.719[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:16.176[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:06:22.265[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg31121
+11:06:22.370[][] dist [http-nio-8081-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:06:31.839[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3wewewewee
+11:06:37.875[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3232323233
+11:07:31.520[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+11:07:31.542[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:07:31.542[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:07:31.701[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:07:31.702[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:07:31.747[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:07:31.747[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:07:31.777[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:07:31.777[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:07:31.872[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:07:31.872[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:15:22.641[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:15:22.642[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:15:22.693[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:15:22.694[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:15:22.709[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:15:22.709[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:15:22.712[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:15:22.713[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:15:22.751[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:15:22.767[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:15:22.777[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:15:22.777[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:15:23.350[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:15:23.403[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:15:23.548[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:06.609[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:06.609[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:06.616[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:06.627[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:06.628[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:06.690[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:06.691[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:06.694[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:06.694[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:06.706[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:06.730[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:06.739[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:08.443[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:08.443[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:08.450[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:08.467[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:08.467[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:08.479[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:08.492[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:08.493[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:08.520[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:08.529[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:08.529[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:08.536[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:27.263[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:27.263[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:27.268[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:27.269[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:27.362[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:27.362[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:27.424[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:27.445[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:27.452[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:27.459[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:27.459[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:27.464[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:29.804[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:29.804[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:33.305[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:33.305[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:33.310[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:36.786[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:36.787[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:36.790[][] dist [http-nio-8081-exec-3] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:45.932[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:45.932[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:45.935[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:50.085[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:50.086[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:50.977[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.164[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:56.164[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:56.166[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:56.166[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:56.170[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:56.170[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:56.171[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:16:56.171[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:16:56.184[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.190[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.197[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.205[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.364[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.372[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:16:56.459[][] dist [http-nio-8081-exec-1] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:18:46.662[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:18:46.662[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:18:46.758[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:18:46.769[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:18:46.769[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:18:46.784[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:18:46.790[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:18:46.790[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:18:47.019[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:18:47.020[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:18:47.071[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:18:47.144[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:52:02.350[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:02.351[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+11:52:02.360[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+11:52:05.348[][] dist [http-nio-8081-exec-4] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+11:52:05.411[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:05.411[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:05.515[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:05.515[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:05.548[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:05.548[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:05.585[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:05.585[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:05.708[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:05.709[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:11.067[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:11.067[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:11.186[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:11.187[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:11.231[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:11.231[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:11.273[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:11.273[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+11:52:11.353[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+11:52:11.353[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走

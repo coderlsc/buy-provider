@@ -1,0 +1,54 @@
+13:37:11.821[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:11.823[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:11.829[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:14.927[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:14.928[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:14.928[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:14.930[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:14.928[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:14.931[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:14.949[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:14.950[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:14.958[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:14.963[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:14.968[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:14.973[][] dist [http-nio-8081-exec-2] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:15.129[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:15.129[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:15.199[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:15.199[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:15.199[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:15.200[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:15.253[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:15.253[][] dist [http-nio-8081-exec-7] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:15.290[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:15.317[][] dist [http-nio-8081-exec-7] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:15.322[][] dist [http-nio-8081-exec-8] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:15.428[][] dist [http-nio-8081-exec-6] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:26.240[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:26.240[][] dist [http-nio-8081-exec-4] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:26.243[][] dist [http-nio-8081-exec-5] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:33.436[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:33.436[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------:session失效 去登录 直接跳转到login页面！
+13:37:33.440[][] dist [http-nio-8081-exec-10] INFO  c.q.b.web.controller.BaseController - 即将转向登录页面================
+13:37:37.062[][] dist [http-nio-8081-exec-9] INFO  c.q.b.web.controller.UserController - 进入login部分-------------gg3c291adab4a574ad7099c1118319589d3
+13:37:37.205[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:37.206[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:37.381[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:37.381[][] dist [http-nio-8081-exec-9] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:37.417[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:37.417[][] dist [http-nio-8081-exec-2] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:37.452[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:37.453[][] dist [http-nio-8081-exec-3] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:37.492[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:37.492[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:42.125[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:42.126[][] dist [http-nio-8081-exec-8] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:48.584[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:48.584[][] dist [http-nio-8081-exec-6] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:48.623[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:48.623[][] dist [http-nio-8081-exec-10] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:48.657[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:48.657[][] dist [http-nio-8081-exec-1] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走
+13:37:48.707[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - ------preHandle进入拦截器------
+13:37:48.707[][] dist [http-nio-8081-exec-5] INFO  c.q.b.w.interceptor.LoginInterceptor - -------:session有效 不用再去登录 直接往下走

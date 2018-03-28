@@ -14,7 +14,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 
-//@EnableDiscoveryClient
+//springboot启动类
+
+//@EnableDiscoveryClient   //取消服务注册功能
 @SpringBootApplication
 @MapperScan("com.qdu.buy.dao")
 @EnableCaching
