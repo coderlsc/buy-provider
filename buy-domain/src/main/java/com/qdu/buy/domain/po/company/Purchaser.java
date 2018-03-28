@@ -1,39 +1,27 @@
-package com.qdu.buy.domain.po;
+package com.qdu.buy.domain.po.company;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @Descripition: 用户po
- * @Author: xiepf
- * @Date: 2017/10/15 18:08
- */
+
 @Data
-@ToString
 @EqualsAndHashCode
-public class Company implements Serializable {
-
-
-    private static final long serialVersionUID = 2588393205358156658L;
+@ToString
+public class Purchaser {
     private Long id;
 
     private String companyName;
 
     private String shortName;
 
-    private String password;
-
+    private String email;
 
     private String phone;
 
-    private String email;
-
-    private String status;
-
+    private String password;
 
     private String createUser;
 
@@ -42,5 +30,7 @@ public class Company implements Serializable {
     private String updateUser;
 
     private Date updateTime;
+
+    private String status;
 
 }

@@ -30,14 +30,14 @@
         </appender>
 
         <!--输出到MQ-->
-        <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
-            <groupName>logProducerGroup</groupName>
-            <namesrvAddr>10.10.2.20:9876</namesrvAddr>
-            <instanceName>logProducerGroup</instanceName>
-            <maxMessageSize>131072</maxMessageSize>
-            <sendMsgTimeout>10000</sendMsgTimeout>
-            <sendMsgRetryTimes>3</sendMsgRetryTimes>
-        </appender>
+        <!--   <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
+               <groupName>logProducerGroup</groupName>
+               <namesrvAddr>10.10.2.20:9876</namesrvAddr>
+               <instanceName>logProducerGroup</instanceName>
+               <maxMessageSize>131072</maxMessageSize>
+               <sendMsgTimeout>10000</sendMsgTimeout>
+               <sendMsgRetryTimes>3</sendMsgRetryTimes>
+           </appender>-->
 
         <root level="INFO">
             <appender-ref ref="console"/>
@@ -46,7 +46,7 @@
         </root>
 
         <!--logback.LogbackDemo：类的全路径 -->
-        <logger name="com.bwton.dist" level="DEBUG">
+        <logger name="com.qdu.buy" level="DEBUG">
         </logger>
     </springProfile>
     <springProfile name="dev20">
@@ -79,14 +79,14 @@
         </appender>
 
         <!--输出到MQ-->
-        <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
+       <!-- <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
             <groupName>logProducerGroup</groupName>
             <namesrvAddr>10.10.2.20:9876</namesrvAddr>
             <instanceName>logProducerGroup</instanceName>
             <maxMessageSize>131072</maxMessageSize>
             <sendMsgTimeout>10000</sendMsgTimeout>
             <sendMsgRetryTimes>3</sendMsgRetryTimes>
-        </appender>
+        </appender>-->
 
         <root level="INFO">
             <appender-ref ref="console"/>
@@ -95,7 +95,7 @@
         </root>
 
         <!--logback.LogbackDemo：类的全路径 -->
-        <logger name="com.bwton.dist" level="DEBUG">
+        <logger name="com.qdu.buy" level="DEBUG">
         </logger>
     </springProfile>
     <springProfile name="test">
@@ -125,21 +125,21 @@
             </rollingPolicy>
         </appender>
         <!--输出到MQ-->
-        <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
+       <!-- <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
             <groupName>logProducerGroup</groupName>
             <namesrvAddr>10.10.2.20:9876</namesrvAddr>
             <instanceName>logProducerGroup</instanceName>
             <maxMessageSize>131072</maxMessageSize>
             <sendMsgTimeout>10000</sendMsgTimeout>
             <sendMsgRetryTimes>3</sendMsgRetryTimes>
-        </appender>
+        </appender>-->
         <root level="INFO">
             <appender-ref ref="console"/>
             <appender-ref ref="file"/>
         </root>
 
         <!--logback.LogbackDemo：类的全路径 -->
-        <logger name="com.bwton.dist" level="INFO">
+        <logger name="com.qdu.buy" level="INFO">
         </logger>
     </springProfile>
     
@@ -170,21 +170,21 @@
             </rollingPolicy>
         </appender>
         <!--输出到MQ-->
-        <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
+ <!--       <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
             <groupName>logProducerGroup</groupName>
             <namesrvAddr>10.10.2.20:9876</namesrvAddr>
             <instanceName>logProducerGroup</instanceName>
             <maxMessageSize>131072</maxMessageSize>
             <sendMsgTimeout>10000</sendMsgTimeout>
             <sendMsgRetryTimes>3</sendMsgRetryTimes>
-        </appender>
+        </appender>-->
         <root level="INFO">
             <appender-ref ref="console"/>
             <appender-ref ref="file"/>
         </root>
 
         <!--logback.LogbackDemo：类的全路径 -->
-        <logger name="com.bwton.dist" level="INFO">
+        <logger name="com.qdu.buy" level="INFO">
         </logger>
     </springProfile>
     
@@ -215,21 +215,21 @@
             </rollingPolicy>
         </appender>
         <!--输出到MQ-->
-        <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
+      <!--  <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
             <groupName>logProducerGroup</groupName>
             <namesrvAddr>10.10.2.20:9876</namesrvAddr>
             <instanceName>logProducerGroup</instanceName>
             <maxMessageSize>131072</maxMessageSize>
             <sendMsgTimeout>10000</sendMsgTimeout>
             <sendMsgRetryTimes>3</sendMsgRetryTimes>
-        </appender>
+        </appender>-->
         <root level="INFO">
             <appender-ref ref="console"/>
             <appender-ref ref="file"/>
         </root>
 
         <!--logback.LogbackDemo：类的全路径 -->
-        <logger name="com.bwton.dist" level="DEBUG">
+        <logger name="com.qdu.buy" level="DEBUG">
         </logger>
     </springProfile>
     
@@ -261,7 +261,7 @@
             </rollingPolicy>
         </appender>
         <!--输出到MQ-->
-        <appender name="mq" class="com.bwton.dist.core.log.MQAppender">
+        <!--<appender name="mq" class="com.bwton.dist.core.log.MQAppender">
             <groupName>logProducerGroup</groupName>
             <namesrvAddr>10.10.2.20:9876</namesrvAddr>
             <instanceName>logProducerGroup</instanceName>
@@ -271,10 +271,10 @@
         </appender>
         <root level="INFO">
             <appender-ref ref="file"/>
-        </root>
+        </root>-->
 
         <!--logback.LogbackDemo：类的全路径 -->
-        <logger name="com.bwton.dist" level="INFO">
+        <logger name="com.qdu.buy" level="INFO">
         </logger>
     </springProfile>
 </configuration>

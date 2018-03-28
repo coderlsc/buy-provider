@@ -36,27 +36,31 @@
 
                 <div class="am-tabs-bd">
                     <div class="am-tab-panel am-active">
-                        <form method= "post" action="" th:action="@{/user/register}">
+                        <form method= "post" action="" th:action="@{/purchaser/register}"  data-am-validator="data-am-validator">
 
                             <div class="user-name">
                                 <label for="companyName"><i class="am-icon-edit"></i></label>
-                                <input type="text" name="" id="companyName" placeholder="公司名称"/>
+                                <input type="text" required="required" name="" id="companyName" placeholder="公司名称"/>
                             </div>
                             <div class="user-name">
                                 <label for="shortName"><i class="am-icon-edit"></i></label>
-                                <input type="text" name="" id="shortName" placeholder="公司简称"/>
+                                <input type="text" required="required" name="" id="shortName" placeholder="公司简称"/>
                             </div>
                             <div class="user-email">
                                 <label for="email"><i class="am-icon-envelope-o"></i></label>
-                                <input type="email" name="" id="email" placeholder="请输入邮箱账号并作为登录账号"/>
+                                <input type="email" required="required" name="" id="email" placeholder="请输入邮箱账号并作为登录账号"/>
                             </div>
                             <div class="user-pass">
                                 <label for="password1"><i class="am-icon-lock"></i></label>
-                                <input type="password" name="" id="password1" placeholder="设置密码"/>
+                                <input type="password" required="required" name="" pattern="^\d{6}$" id="password1" placeholder="设置密码"/>
                             </div>
                             <div class="user-pass">
                                 <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
-                                <input type="password" name="" id="passwordRepeat2" placeholder="确认密码"/>
+                                <input type="password" required="required" name="" pattern="^\d{6}$" id="passwordRepeat2" placeholder="确认密码"  data-equal-to="#password1"/>
+                            </div>
+
+                            <div class="am-cf">
+                                <input type="submit" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
                             </div>
 
                         </form>
@@ -66,9 +70,7 @@
                                 <input id="reader-me2" type="checkbox"/> 点击表示您同意商城《服务协议》
                             </label>
                         </div>
-                        <div class="am-cf">
-                            <input type="submit" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
-                        </div>
+
 
                     </div>
 
