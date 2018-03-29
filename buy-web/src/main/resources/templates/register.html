@@ -50,6 +50,19 @@
                                 <label for="email"><i class="am-icon-envelope-o"></i></label>
                                 <input type="email" required="required" name="" id="email" placeholder="请输入邮箱账号并作为登录账号"/>
                             </div>
+
+                            <div class="user-phone">
+                                <label for="phone1"><i class="am-icon-mobile-phone am-icon-md"></i></label>
+                                <input type="text" name="" required="required" onblur="checkPhone($(this).val());"  id="phone1" placeholder="请输入手机号"/>
+                            </div>
+                            <div class="verification">
+                                <label for="code1"><i class="am-icon-code-fork"></i></label>
+                                <input type="tel" name="" id="code1" placeholder="请输入验证码"/>
+                                <a class="btn" href="javascript:void(0);" onclick="sendMobileCode($('#phone1'),$('#msg'));" id="sendMobileCode">
+                                    <span id="dyMobileButton">获取</span></a>
+                            </div>
+                            <span id="msg" style="color: red;"></span>
+
                             <div class="user-pass">
                                 <label for="password1"><i class="am-icon-lock"></i></label>
                                 <input type="password" required="required" name="" pattern="^\d{6}$" id="password1" placeholder="设置密码"/>
@@ -64,6 +77,12 @@
                             </div>
 
                         </form>
+                    <!--    <script>
+                            if ($.AMUI &amp;&amp; $.AMUI.validator) {
+                                $.AMUI.validator.patterns.mobile = /^\s*1\d{10}\s*$/;
+                            }
+                        </script>-->
+
 
                         <div class="login-links">
                             <label for="reader-me">
@@ -91,8 +110,8 @@
                             <div class="verification">
                                 <label for="code"><i class="am-icon-code-fork"></i></label>
                                 <input type="tel" name="" id="code" placeholder="请输入验证码"/>
-                                <a class="btn" href="javascript:void(0);" onclick="sendMobileCode();" id="sendMobileCode">
-                                    <span id="dyMobileButton">获取</span></a>
+                                <a class="btn" href="javascript:void(0);" onclick="sendMobileCode();" id="sendMobileCode2">
+                                    <span id="dyMobileButton2">获取</span></a>
                             </div>
                             <div class="user-pass">
                                 <label for="password2"><i class="am-icon-lock"></i></label>
@@ -153,34 +172,41 @@
 
     <script type="text/javascript">
 
-        $.ready(function () {
-            $("#")
 
-        });
-        var result=false;
-        function validate(){
-            var userName=$("#loginForm[]").val();
-            var password=$("#password").val();
-            if(userName==""||password==""){
-                result=false;
+
+
+
+        function sendMobileCode(phone,msg){
+            if ($.trim($(phone).val()).length == 0) {
+                msg.html('手机号没有输入');
+                $(phone).focus();
+            } else
+                if(isPhoneNo($.trim($(phone).val())) == false) {
+                    msg.html("手机号格式错误");
+                    $(phone).focus();
+
             }
             else{
-                result=true;
-            }
+                alert("验证码已发出..");
+                msg.html("");
+                }
         }
 
-        $("#loginForm").submit(function(event){
-            validate();
-            if(result==true){
 
+        // 验证手机号
+        function isPhoneNo(phone) {
+            var pattern = /^1[34578]\d{9}$/;
+            return pattern.test(phone);
+        }
+
+        function checkPhone(phone){
+            if(isPhoneNo(phone)==false){
+                $("#msg").html("手机号格式错误");
             }
             else{
-                event.preventDefault();
-                $("#message").text("用户名或者密码不能为空！");
-                //return false;
+                $("#msg").html("");
             }
-        });
-
+        }
 
 
     </script>
