@@ -30,43 +30,35 @@ public class PurchaserController {
     public ModelAndView login(Purchaser purchaser, HttpServletRequest request) throws Exception {
         log.info("进入采购商login部分-------------"+purchaser.toString());
         //获取登录用户名和密码
-        String userName = purchaser.getEmail();
+        String phone = purchaser.getPhone();
         String password = purchaser.getPassword();
-        //User user1=companyService.verifyUser(userName,password);
+        Purchaser purchaser1=purchaserService.selectByPhoneAndPassword(phone,password);
         ModelAndView result=new ModelAndView();
         HttpSession session=request.getSession();
-        if(purchaser==null){
+        if(purchaser1==null){
             result.setViewName("login");
             result.addObject("msg","用户名或密码错误");
         }
         else{
             result.setViewName("redirect:/toIndex");
-            result.addObject("user",purchaser);
-            session.setAttribute("user",purchaser);
+            result.addObject("purchaser",purchaser1);
+            session.setAttribute("purchaser",purchaser1);
         }
         return result;
     }
 
     @PostMapping(value = "/register")
     public ModelAndView register(Purchaser purchaser, HttpServletRequest request) throws Exception {
-        log.info("进入register部分-------------"+purchaser.toString());
-        //获取登录用户名和密码
+        log.info("进入purchaser-register部分-------------"+purchaser.toString());
 
-        //获取对应的数据  插入到数据库
-        String email = purchaser.getEmail();
-        String password = purchaser.getPassword();
-//        User user1=purchaserService.verifyUser(userName,password);
+        //添加注册信息
+       Long id= purchaserService.insertSelective(purchaser);
+
+        //跳转到登录页面
         ModelAndView result=new ModelAndView();
-        HttpSession session=request.getSession();
-//        if(user1==null){
-//            result.setViewName("login");
-//            result.addObject("msg","用户名或密码错误");
-//        }
-//        else{
-//            result.setViewName("redirect:/toIndex");
-//            result.addObject("user",user1);
-//            session.setAttribute("user",user);
-//        }
+        result.addObject("purchaserId",id);//携带采购商id过去
+        result.setViewName("forward:/toConfirm");
+        //直接跳去上传相关凭证 执照页面
         return result;
     }
 

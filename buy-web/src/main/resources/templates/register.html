@@ -30,8 +30,8 @@
 
             <div class="am-tabs" id="doc-my-tabs">
                 <ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
-                    <li class="am-active"><a href="#">邮箱注册</a></li>
-                    <li><a href="#">手机号注册</a></li>
+                    <li class="am-active"><a href="#">注册采购</a></li>
+                    <li><a href="#">注册供应</a></li>
                 </ul>
 
                 <div class="am-tabs-bd">
@@ -39,21 +39,21 @@
                         <form method= "post" action="" th:action="@{/purchaser/register}"  data-am-validator="data-am-validator">
 
                             <div class="user-name">
-                                <label for="companyName"><i class="am-icon-edit"></i></label>
-                                <input type="text" required="required" name="" id="companyName" placeholder="公司名称"/>
+                                <label for="companyName1"><i class="am-icon-edit"></i></label>
+                                <input type="text" required="required" name="companyName" id="companyName1" placeholder="公司名称"/>
                             </div>
                             <div class="user-name">
-                                <label for="shortName"><i class="am-icon-edit"></i></label>
-                                <input type="text" required="required" name="" id="shortName" placeholder="公司简称"/>
+                                <label for="shortName1"><i class="am-icon-edit"></i></label>
+                                <input type="text" required="required" name="shortName" id="shortName1" placeholder="公司简称"/>
                             </div>
                             <div class="user-email">
-                                <label for="email"><i class="am-icon-envelope-o"></i></label>
-                                <input type="email" required="required" name="" id="email" placeholder="请输入邮箱账号并作为登录账号"/>
+                                <label for="email1"><i class="am-icon-envelope-o"></i></label>
+                                <input type="email" required="required" name="email" id="email1" placeholder="请输入邮箱账号并作为登录账号"/>
                             </div>
 
                             <div class="user-phone">
                                 <label for="phone1"><i class="am-icon-mobile-phone am-icon-md"></i></label>
-                                <input type="text" name="" required="required" onblur="checkPhone($(this).val());"  id="phone1" placeholder="请输入手机号"/>
+                                <input type="text"  name="phone" pattern="^1[3,4,5,7,8]\d{9}$" required="required" onblur="checkPhone($(this).val());"  id="phone1" placeholder="请输入手机号"/>
                             </div>
                             <div class="verification">
                                 <label for="code1"><i class="am-icon-code-fork"></i></label>
@@ -65,7 +65,7 @@
 
                             <div class="user-pass">
                                 <label for="password1"><i class="am-icon-lock"></i></label>
-                                <input type="password" required="required" name="" pattern="^\d{6}$" id="password1" placeholder="设置密码"/>
+                                <input type="password" required="required" name="password" pattern="^\d{6}$" id="password1" placeholder="设置密码"/>
                             </div>
                             <div class="user-pass">
                                 <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
@@ -97,11 +97,11 @@
                         <form method="post" action="">
                             <div class="user-name">
                                 <label for="companyName2"><i class="am-icon-edit"></i></label>
-                                <input type="text" name="" id="companyName2" placeholder="公司名称"/>
+                                <input type="text" required="required" name="companyName" id="companyName2" placeholder="公司名称"/>
                             </div>
                             <div class="user-name">
                                 <label for="shortName2"><i class="am-icon-edit"></i></label>
-                                <input type="text" name="" id="shortName2" placeholder="公司简称"/>
+                                <input type="text" required="required" name="shortName" id="shortName2" placeholder="公司简称"/>
                             </div>
                             <div class="user-phone">
                                 <label for="phone"><i class="am-icon-mobile-phone am-icon-md"></i></label>
@@ -109,7 +109,7 @@
                             </div>
                             <div class="verification">
                                 <label for="code"><i class="am-icon-code-fork"></i></label>
-                                <input type="tel" name="" id="code" placeholder="请输入验证码"/>
+                                <input type="tel" required="required" name="" id="code" placeholder="请输入验证码"/>
                                 <a class="btn" href="javascript:void(0);" onclick="sendMobileCode();" id="sendMobileCode2">
                                     <span id="dyMobileButton2">获取</span></a>
                             </div>
@@ -172,8 +172,19 @@
 
     <script type="text/javascript">
 
+            $(function(){
+               //表单提交的时候 判断各种输入是否合法
+                $("#form1").submit(function(event){
+                        //验证验证码是不是正确
+                        /*if(validateCode($("#code1").val())){
+                        }
+                        else{
+                            event.preventDefault();//阻止表单提交
+                        }*/
 
+                });
 
+            });
 
 
         function sendMobileCode(phone,msg){
@@ -187,10 +198,34 @@
 
             }
             else{
+                //发送验证码请求
+                    $.ajax({
+                        url: "/user/sendCode",
+                        dataType: "json",
+                        data: code,
+                        type: "POST",
+                        success: function(data){
+                            if(data.success=="right"){
+                                $("#msg").html("");
+                                //验证码正确
+                                return true;
+                            }else{
+                                //验证码不正确
+                                $("#msg").html("验证码错误");
+                                //alert("请重新获取验证码");
+                                return false;
+                            }
+                        },
+                        error:function(){
+                            alert("发送失败 请稍后..");
+                        }
+                    });
                 alert("验证码已发出..");
                 msg.html("");
                 }
         }
+
+
 
 
         // 验证手机号
@@ -207,6 +242,34 @@
                 $("#msg").html("");
             }
         }
+
+        //验证验证码是不是正确
+        function validateCode(code){
+            $.ajax({
+                url: "/user/validateCode",
+                dataType: "json",
+                data: code,
+                type: "POST",
+                success: function(data){
+                    if(data.success=="right"){
+                        $("#msg").html("");
+                        //验证码正确
+                        return true;
+                    }else{
+                        //验证码不正确
+                        $("#msg").html("验证码错误");
+                        //alert("请重新获取验证码");
+                        return false;
+                    }
+                },
+                error:function(){
+                    alert("服务器出错...");
+                }
+            });
+        }
+
+
+
 
 
     </script>

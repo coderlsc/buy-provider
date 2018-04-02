@@ -15,19 +15,18 @@ public class LoginInterceptor implements HandlerInterceptor {
         @Override
         public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
-            // TODO Auto-generated method stub
             logger.info("------preHandle进入拦截器------");
             //获取session
             HttpSession session = request.getSession(true);
             //判断用户ID是否存在，不存在就跳转到登录界面
-            if(session.getAttribute("user") == null){
+            if(session.getAttribute("purchaser") == null){
                 logger.info("------:session失效 去登录 直接跳转到login页面！");
                 response.sendRedirect(request.getContextPath()+"/toLogin");
                 return false;
             }else{
                 //刷新session
                 logger.info("-------:session有效 不用再去登录 直接往下走");
-                session.setAttribute("user", session.getAttribute("user"));
+                session.setAttribute("purchaser", session.getAttribute("purchaser"));
                 return true;
             }
         }

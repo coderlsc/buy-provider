@@ -5,6 +5,7 @@ import com.qdu.buy.company.PurchaserService;
 import com.qdu.buy.dao.company.PurchaserMapper;
 import com.qdu.buy.dao.company.PurchaserMapper;
 import com.qdu.buy.domain.po.company.Purchaser;
+import com.qdu.buy.lang.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,19 +25,25 @@ public class PurchaserServieImpl implements PurchaserService {
     }
 
     @Override
-    public int insert(Purchaser record) {
+    public Long insert(Purchaser record) {
+        record.setStatus(Constants.Purchaser.StatusEnum.dead.getValue());
         record.setCreateTime(new Date());
         record.setCreateUser("admin");
         record.setUpdateTime(new Date());
         record.setUpdateUser("admin");
-        return purchaserMapper.insert(record);
+        purchaserMapper.insert(record);
+        return record.getId();
     }
 
     @Override
-    public int insertSelective(Purchaser record) {
+    public Long insertSelective(Purchaser record) {
+        record.setStatus(Constants.Purchaser.StatusEnum.dead.getValue());
+        record.setCreateTime(new Date());
+        record.setCreateUser("admin");
         record.setUpdateUser("admin");
         record.setUpdateTime(new Date());
-        return purchaserMapper.insertSelective(record);
+        purchaserMapper.insertSelective(record);
+        return record.getId();
     }
 
     @Override
@@ -52,5 +59,10 @@ public class PurchaserServieImpl implements PurchaserService {
     @Override
     public int updateByPrimaryKey(Purchaser record) {
         return purchaserMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public Purchaser selectByPhoneAndPassword(String phone,String password) {
+        return purchaserMapper.selectByPhoneAndPassword(phone,password);
     }
 }

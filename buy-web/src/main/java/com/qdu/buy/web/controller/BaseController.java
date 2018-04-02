@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
+//专门用来跳转页面的控制器
 @Controller("baseController")
 @Slf4j
 public class BaseController {
@@ -35,6 +35,12 @@ public class BaseController {
     @RequestMapping(value="index")
     public String index(){
         return "index";
+    }
+
+    //去认证页面
+    @RequestMapping(value = "toConfirm")
+    public String toConfirm(){
+        return "detailRegister";
     }
 
 

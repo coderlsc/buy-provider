@@ -5,17 +5,17 @@ package com.qdu.buy.web.controller;
 
 import com.qdu.buy.domain.po.User;
 import com.qdu.buy.user.UserService;
+import com.qdu.buy.util.PhoneUtils;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @Api(value = "/user", description = "用户管理接口")
@@ -84,5 +84,36 @@ public class UserController {
         }
         return result;
     }
+
+    //验证码校验
+    @RequestMapping(value = "validateCode")
+    public Map<String,Object> validateCode(@RequestParam(value = "code")String code,HttpServletRequest request){
+
+        HttpSession session=request.getSession();
+        String currentCode=(String) session.getAttribute("code");
+        Map<String,Object> result=new  HashMap<String,Object>();
+        if(!currentCode.equals(code)){
+            result.put("success","error");// TODO: 2018/3/30  需要细致考虑各种情况
+        }
+        else{
+            result.put("success","right");
+        }
+        return result;
+
+    }
+    //sendCode验证码发送
+    @RequestMapping(value = "sendCode")
+    public Map<String,Object> sendCode(){
+        try{
+
+        }catch(Exception e){
+
+
+        }
+
+        return null;
+    }
+
+
 
 }

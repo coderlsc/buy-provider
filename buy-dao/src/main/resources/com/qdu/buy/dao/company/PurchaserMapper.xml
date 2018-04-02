@@ -28,7 +28,7 @@
     delete from purchaser
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.qdu.buy.domain.po.company.Purchaser" >
+  <insert id="insert" parameterType="com.qdu.buy.domain.po.company.Purchaser" keyColumn="id"  useGeneratedKeys="true" keyProperty="id">
     insert into purchaser (id, company_name, short_name, 
       email, phone, password, 
       create_user, create_time, update_user, 
@@ -38,7 +38,7 @@
       #{createUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
       #{updateTime,jdbcType=TIMESTAMP}, #{status,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.qdu.buy.domain.po.company.Purchaser" >
+  <insert id="insertSelective" parameterType="com.qdu.buy.domain.po.company.Purchaser" keyColumn="id" useGeneratedKeys="true" keyProperty="id">
     insert into purchaser
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -161,4 +161,17 @@
       status = #{status,jdbcType=CHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+
+  <select id="selectByPhoneAndPassword" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select
+    <include refid="Base_Column_List" />
+    from purchaser
+    where phone = #{phone,jdbcType=VARCHAR}
+    AND
+     password=#{password,jdbcType=VARCHAR}
+  </select>
+
+
+
 </mapper>

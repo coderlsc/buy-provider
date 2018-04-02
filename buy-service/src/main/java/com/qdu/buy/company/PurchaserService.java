@@ -7,14 +7,16 @@ public interface PurchaserService {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(Purchaser record);
+    Long insert(Purchaser record);
 
-    int insertSelective(Purchaser record);
+    Long insertSelective(Purchaser record);
 
     Purchaser selectByPrimaryKey(Long id);
 
     int updateByPrimaryKeySelective(Purchaser record);
 
     int updateByPrimaryKey(Purchaser record);
+
+    Purchaser selectByPhoneAndPassword(String phone,String password);
 
 }

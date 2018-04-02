@@ -28,7 +28,6 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX + "/static/");
         registry.addResourceHandler("/templates/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX + "/templates/");
-
         super.addResourceHandlers(registry);
     }
 
@@ -41,7 +40,8 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public void addInterceptors(InterceptorRegistry registry) {
         //拦截规则：除了login，其他都拦截判断
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**").excludePathPatterns("/toLogin").excludePathPatterns("/user/login").excludePathPatterns("/")
-        .excludePathPatterns("/toRegister").excludePathPatterns("/index").excludePathPatterns("/purchaser/register");
+        .excludePathPatterns("/toRegister").excludePathPatterns("/index").excludePathPatterns("/purchaser/register").excludePathPatterns("/purchaser/login")
+        .excludePathPatterns("/toConfirm").excludePathPatterns("/downloadTemplate").excludePathPatterns("/*.html");
         super.addInterceptors(registry);
     }
 
