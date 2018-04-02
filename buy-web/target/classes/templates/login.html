@@ -31,10 +31,10 @@
 							<div class="clear"></div>
 						
 						<div class="login-form">
-						  <form id="loginForm" th:action="${#httpServletRequest.getContextPath()+'/user/login'}" method="post">
+						  <form id="loginForm" th:action="${#httpServletRequest.getContextPath()+'/purchaser/login'}" method="post">
 							   <div class="user-name">
-								    <label for="userName"><i class="am-icon-user"></i></label>
-								    <input type="text" name="userName" id="userName" placeholder="邮箱/手机/用户名"/>
+								    <label for="phone"><i class="am-icon-user"></i></label>
+								    <input type="text" name="phone" id="phone" placeholder="邮箱/手机/用户名"/>
                  </div>
                  <div class="user-pass">
 								    <label for="password"><i class="am-icon-lock"></i></label>
@@ -94,9 +94,9 @@
 	<script type="text/javascript">
         var result=false;
         function validate(){
-            var userName=$("#userName").val();
+            var phone=$("#phone").val();
             var password=$("#password").val();
-            if(userName==""||password==""){
+            if(phone==""||password==""){
                 result=false;
             }
             else{

@@ -25,7 +25,7 @@
     <div class="am-container header">
         <ul class="message-l">
             <div class="topMessage">
-                <div class="menu-hd" th:if="${session.user==null}">
+                <div class="menu-hd" th:if="${session.purchaser==null}">
                     <!--　 <a href="comments.html" th:href="@{/product/comments(prodId=${prod.id})}" th:if="${not #lists.isEmpty(prod.comments)}">view</a>-->
                     <a href="/toLogin" th:href="${#httpServletRequest.getContextPath()+'/toLogin'}"  target="_top" class="h">亲，请登录</a>
                 </div>
