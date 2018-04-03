@@ -117,13 +117,13 @@
 					<form class="am-form am-form-horizontal">
 						<div class="am-form-group">
 							<label for="doc-form-file" class="am-form-label">授权委托书</label>
-							<a href="templates/person.html" th:href="@{/templates/person.html}">下载模板</a>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<div class="am-form-group am-form-file" style="margin-left: 100px;">
 								<button type="button" class="am-btn am-btn-danger am-btn-sm" data-am-popover="{content: '温馨提示：需要加盖公章后 上传扫描件', trigger: 'hover focus'}">
 									<i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
 								<input id="doc-form-file" type="file" alt="温馨提示: 打印后盖上公章上传扫描件" multiple="multiple"/>
 							</div>
+							<a href="/downloadTemplate" th:href="@{/downloadTemplate}">下载模板</a>
 							<div id="file-list"></div>
 							<script>
                                 $(function() {
