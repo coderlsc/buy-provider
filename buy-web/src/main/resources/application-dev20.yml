@@ -2,15 +2,16 @@ server:
   port: 8081
   session:
     timeout: 30
-  context-path: /
+  context-path: /buy
   tomcat:
     accept-count: 1000
     max-threads: 1000
     max-connections: 2000
 
 spring:
+
   application:
-    name: microservice-dist-provider
+    name: microservice-buy-provider
   session:
     store-type: none
   cache:
@@ -26,10 +27,16 @@ spring:
 
   mvc:
     dispatch-options-request: true
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+    static-path-pattern: classpath:/META-INF/resources/,classpath:/resources/, classpath:/static/,classpath:/templates/
+
+
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.10.2.206:3306/dist1?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/buydb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&allowMultiQueries=true
     username: root
     password: 123456
     initialSize: 1
@@ -47,17 +54,17 @@ spring:
   freemarker:
     request-context-attribute: request
   view:
-     prefix: /templates/
-     suffix: .ftl
+     prefix: classpath:/templates/
+     suffix: .html
   redis:
     #Redis数据库索引（默认为0）
     database: 0
-    host: 10.10.2.30
+    host: localhost
     port: 6379
     # 连接超时时间（毫秒）
     timeout: 3000
     # Redis服务器连接密码（默认为空）
-    password: dist3redis
+    password:
     # 缓存管理器的默认失效时间，单位秒
     expireTime: 86400
     pool:
@@ -69,6 +76,15 @@ spring:
       max-idle: 200
       # 连接池中的最小空闲连接
       min-idle: 50
+  thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: LEGACYHTML5
+      encoding: UTF-8
+      content-type: text/html
+      cache: false
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/, classpath:/static/,classpath:/templates/
 rocketmq:
   producer:
     # 发送同一类消息的设置为同一个group，保证唯一,默认不需要设置，rocketmq会使用ip@pid(pid代表jvm名字)作为唯一标示
@@ -87,7 +103,6 @@ rocketmq:
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: true
-
 logging:
   config: classpath:config/logback-spring.xml
 
@@ -97,8 +112,8 @@ token:
 
 global:
   workerId: 1
-  sysName: 资源分销平台
-  uploadBasePath: /usr/local/dist3.0/temp
+  sysName: 企业采购平台
+  uploadBasePath: D:/dist
   activityBaseJsPath: https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js,http://api.msx.bwton.com/api_h5/assets/js/Hextech.js
 
 msxcxApi:
@@ -146,8 +161,8 @@ eureka:
   client:
     serviceUrl:
       #defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
-      #defaultZone: http://10.10.2.206:8761/eureka/
-      defaultZone: http://10.10.2.20:8762/eureka/
+      #defaultZone: http://10.10.2.20:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
 
@@ -156,3 +171,6 @@ multipart:   
   enabled: true  
   max-file-size: 50mb  
   max-request-size: 50mb  
+template:
+  filePath: D:/template/
+  uploadPath: D:/license
