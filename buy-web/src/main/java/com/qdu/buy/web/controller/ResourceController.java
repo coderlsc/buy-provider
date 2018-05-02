@@ -4,27 +4,19 @@ import com.bwton.dist.constant.Constants;
 import com.bwton.dist.core.data.vo.DataResponse;
 import com.bwton.dist.core.web.annotation.OperationLog;
 import com.bwton.dist.util.ExcelUtils;
-import com.bwton.dist.util.FileUtil;
-import com.qdu.buy.ResourceService;
-import com.qdu.buy.util.WordUtils;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
+import com.qdu.buy.LicenseResourceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
 
 
 /**
@@ -42,7 +34,7 @@ import java.util.Map;
 public class ResourceController {
 
     @Autowired
-    private ResourceService adResourceService;
+    private LicenseResourceService adResourceService;
 
     @Value("${template.filePath}")
     private String filePath;
@@ -64,31 +56,6 @@ public class ResourceController {
             return new ModelAndView(Constants.JSONVIEW_KEY, DataResponse.failure("上传失败"+e.getMessage()+" 请稍后..."));
         }
 
-    }
-
-    @RequestMapping(value="/showPic")
-    @ApiOperation(value = "显示图片 以二进制流返回", notes = "显示图片 以二进制流返回")
-    @OperationLog(businFlag = "10551")
-    public @ResponseBody Map<String,Object> showPic(HttpServletRequest request,
-                            HttpServletResponse response) throws Exception{
-        try{
-//            String path = request.getParameter("resourcePath")+"//"+request.getParameter("resourceName");
-//            FileInputStream fs = new FileInputStream(path);
-//            int b=fs.available(); //得到文件大小
-//            byte data[]=new byte[b];
-//            fs.read(data);  //读数据
-//            response.setContentType("image*//*"); //设置返回的文件类型
-//            ServletOutputStream toClient=response.getOutputStream(); //得到向客户端输出二进制数据的对象
-//            toClient.write(data);  //输出数据
-//            toClient.flush();
-//            toClient.close();
-//            fs.close();
-            FileUtil.showPic(request,response);
-        }catch(Exception e){
-            e.printStackTrace();
-            log.info(e.getMessage());
-        }
-        return null;//不返回 直接以二进制流的形式返回给页面
     }
 
         @GetMapping(value = "/downloadTemplate")

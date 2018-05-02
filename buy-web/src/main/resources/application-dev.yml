@@ -79,7 +79,7 @@ spring:
   thymeleaf:
       prefix: classpath:/templates/
       suffix: .html
-      mode: HTML5
+      mode: LEGACYHTML5
       encoding: UTF-8
       content-type: text/html
       cache: false
@@ -173,3 +173,4 @@ multipart:   
   max-request-size: 50mb  
 template:
   filePath: D:/template/
+  uploadPath: D:/license

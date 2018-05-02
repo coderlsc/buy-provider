@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 
 @Service
@@ -64,5 +65,11 @@ public class PurchaserServieImpl implements PurchaserService {
     @Override
     public Purchaser selectByPhoneAndPassword(String phone,String password) {
         return purchaserMapper.selectByPhoneAndPassword(phone,password);
+    }
+
+    //根据手机号获取采购商信息
+    @Override
+    public List<Purchaser> selectByPhone(String phone){
+        return purchaserMapper.selectByPhone(phone);
     }
 }

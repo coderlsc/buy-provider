@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.qdu.buy.dao.company.PurchaserMapper" >
-  <resultMap id="BaseResultMap" type="com.qdu.buy.domain.po.company.Purchaser" >
+<mapper namespace="com.qdu.buy.dao.company.SupplierMapper" >
+  <resultMap id="BaseResultMap" type="com.qdu.buy.domain.po.company.Supplier" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="company_name" property="companyName" jdbcType="VARCHAR" />
     <result column="short_name" property="shortName" jdbcType="VARCHAR" />
@@ -21,15 +21,15 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
-    from purchaser
+    from supplier
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from purchaser
+    delete from supplier
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.qdu.buy.domain.po.company.Purchaser" keyColumn="id"  useGeneratedKeys="true" keyProperty="id">
-    insert into purchaser (id, company_name, short_name, 
+  <insert id="insert" parameterType="com.qdu.buy.domain.po.company.Supplier" >
+    insert into supplier (id, company_name, short_name, 
       email, phone, password, 
       create_user, create_time, update_user, 
       update_time, status)
@@ -38,8 +38,8 @@
       #{createUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
       #{updateTime,jdbcType=TIMESTAMP}, #{status,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.qdu.buy.domain.po.company.Purchaser" keyColumn="id" useGeneratedKeys="true" keyProperty="id">
-    insert into purchaser
+  <insert id="insertSelective" parameterType="com.qdu.buy.domain.po.company.Supplier" >
+    insert into supplier
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -111,8 +111,8 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qdu.buy.domain.po.company.Purchaser" >
-    update purchaser
+  <update id="updateByPrimaryKeySelective" parameterType="com.qdu.buy.domain.po.company.Supplier" >
+    update supplier
     <set >
       <if test="companyName != null" >
         company_name = #{companyName,jdbcType=VARCHAR},
@@ -147,8 +147,8 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.qdu.buy.domain.po.company.Purchaser" >
-    update purchaser
+  <update id="updateByPrimaryKey" parameterType="com.qdu.buy.domain.po.company.Supplier" >
+    update supplier
     set company_name = #{companyName,jdbcType=VARCHAR},
       short_name = #{shortName,jdbcType=VARCHAR},
       email = #{email,jdbcType=VARCHAR},
@@ -161,26 +161,4 @@
       status = #{status,jdbcType=CHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-
-
-  <select id="selectByPhoneAndPassword" resultMap="BaseResultMap" parameterType="java.lang.String">
-    select
-    <include refid="Base_Column_List" />
-    from purchaser
-    where phone = #{phone,jdbcType=VARCHAR}
-    AND
-     password=#{password,jdbcType=VARCHAR}
-  </select>
-
-
-  <select id="selectByPhone" resultMap="BaseResultMap" parameterType="java.lang.String">
-    select
-    <include refid="Base_Column_List" />
-    from purchaser
-    where phone = #{phone,jdbcType=VARCHAR}
-  </select>
-
-
-
-
 </mapper>
