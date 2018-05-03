@@ -165,7 +165,9 @@
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
 									<li  th:each="searchItemVo : ${itemList} ">
 										<div class="i-pic limit">
-											<img src="../images/imgsearch1.jpg" th:src="${searchItemVo.images[0]}" />
+											<a th:href="@{/introduction.html(itemId=${searchItemVo.id})}">
+											<img src="../images/imgsearch1.jpg" th:href="@{/introduction.html(itemId=${searchItemVo.id})}" th:src="${searchItemVo.images[0]}" />
+											</a>
 											<p class="title fl" th:text="${searchItemVo.title}"></p>
 											<p class="price fl">
 												<b>¥</b>

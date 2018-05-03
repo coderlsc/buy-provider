@@ -4,6 +4,7 @@ import com.bwton.dist.lang.Page;
 import com.qdu.buy.dao.search.ItemDao;
 import com.qdu.buy.dao.search.ItemDescDao;
 import com.qdu.buy.domain.po.query.SearchQuery;
+import com.qdu.buy.domain.po.search.ItemDesc;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +22,9 @@ public class SearchServiceImpl implements SearchService {
     @Autowired
     private ItemDao itemDao;
 
+    @Autowired
+    private ItemDescDao itemDescDao;
+
 
     @Override
     public Page<SearchItemVo> search(String queryString, int pageNo) throws Exception {
@@ -34,5 +38,13 @@ public class SearchServiceImpl implements SearchService {
         int rowsCount=itemDao.queryCount(searchQuery);
         Page<SearchItemVo> page=new Page<>(rowsCount,searchQuery.getPageNo(),searchQuery.getPageSize(),result);
         return page;
+    }
+
+    @Override
+    public SearchItemVo getIntroduction(String itemId) throws Exception {
+
+
+        SearchItemVo searchItemVo=itemDao.queryIntroduceByItemId(Long.valueOf(itemId));
+        return searchItemVo;
     }
 }

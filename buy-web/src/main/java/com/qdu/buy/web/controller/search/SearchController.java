@@ -40,6 +40,16 @@ public class SearchController {
         return "search";
     }
 
+    @RequestMapping("/introduction")
+    public String introduction(@RequestParam("itemId")String itemId, Model model) throws Exception {
+        //转码 防止乱码
+        itemId = URLDecoder.decode(itemId,"utf-8");
+        SearchItemVo searchResult = searchService.getIntroduction(itemId);
+        model.addAttribute("item",searchResult);
+        //把结果传递给页面
+        return "introduction";
+    }
+
 
 
 

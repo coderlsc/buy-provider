@@ -34,7 +34,7 @@
     create_user, update_user
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from item
     where id = #{id,jdbcType=BIGINT}
@@ -243,5 +243,18 @@
         AND t1.sell_point  like CONCAT('%',#{sellPoint,jdbcType=VARCHAR},'%')
       </if>
     </where>
+  </select>
+
+  <select id="queryIntroduceByItemId" resultMap="SearchResultMap" parameterType="java.lang.Long" >
+    select
+    t1.*,
+    t2.item_desc as item_desc,t3.name as category_name
+    from item t1
+    left JOIN  item_desc t2
+    on t1.id=t2.item_id
+    LEFT  JOIN  item_cat t3
+    on t1.cid=t3.id
+
+    where t1.id = #{itemId,jdbcType=BIGINT}
   </select>
 </mapper>

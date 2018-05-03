@@ -3,6 +3,7 @@ package com.qdu.buy.dao.search;
 import com.qdu.buy.domain.po.query.SearchQuery;
 import com.qdu.buy.domain.po.search.Item;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -22,5 +23,7 @@ public interface ItemDao {
     List<SearchItemVo> queryItemPage(SearchQuery searchQuery);
 
     int queryCount(SearchQuery searchQuery);
+
+   SearchItemVo queryIntroduceByItemId(@Param("itemId")Long itemId);
 
 }
