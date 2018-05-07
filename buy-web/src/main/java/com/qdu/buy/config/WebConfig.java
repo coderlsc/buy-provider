@@ -39,7 +39,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //拦截规则：除了login，其他都拦截判断
-        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/user/**");
+        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/user/**").addPathPatterns("/cart/**");
 //        .excludePathPatterns("/toLogin").excludePathPatterns("/user/login").excludePathPatterns("/")
 //                .excludePathPatterns("/toRegister").excludePathPatterns("/index").excludePathPatterns("/purchaser/register").excludePathPatterns("/purchaser/login")
 //                .excludePathPatterns("/toConfirm").excludePathPatterns("/downloadTemplate").excludePathPatterns("/*.html");

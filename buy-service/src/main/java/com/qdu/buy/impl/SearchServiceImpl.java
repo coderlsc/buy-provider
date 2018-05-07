@@ -41,9 +41,7 @@ public class SearchServiceImpl implements SearchService {
     }
 
     @Override
-    public SearchItemVo getIntroduction(String itemId) throws Exception {
-
-
+    public SearchItemVo getIntroduction(String itemId) {
         SearchItemVo searchItemVo=itemDao.queryIntroduceByItemId(Long.valueOf(itemId));
         return searchItemVo;
     }

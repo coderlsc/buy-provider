@@ -6,6 +6,7 @@ import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,9 @@ public class SearchController {
 
     @Autowired
     private SearchService searchService;
+
+    @Autowired
+    private RedisTemplate<String,Object> redisTemplate;
 
     @RequestMapping("/search")
     public String search(@RequestParam("queryStr")String queryStr,
@@ -44,7 +48,19 @@ public class SearchController {
     public String introduction(@RequestParam("itemId")String itemId, Model model) throws Exception {
         //转码 防止乱码
         itemId = URLDecoder.decode(itemId,"utf-8");
-        SearchItemVo searchResult = searchService.getIntroduction(itemId);
+        SearchItemVo searchResult=new SearchItemVo();
+        try{
+            searchResult=(SearchItemVo) redisTemplate.opsForValue().get("item_"+itemId);
+            if(searchResult!=null){
+                log.info("redis中查询到商品详情数据 不需从mysql中查询");
+            }
+            else{
+                searchResult= searchService.getIntroduction(itemId);
+                redisTemplate.opsForValue().set("item_"+itemId,searchResult);
+            }
+        }catch(Exception e){
+            log.error("获取缓存失败"+e.getMessage(),e);
+        }
         model.addAttribute("item",searchResult);
         //把结果传递给页面
         return "introduction";

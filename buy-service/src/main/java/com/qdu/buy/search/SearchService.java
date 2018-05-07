@@ -7,5 +7,5 @@ public interface SearchService {
 
     Page<SearchItemVo> search(String queryString, int pageNo) throws Exception;
 
-    SearchItemVo getIntroduction(String itemId) throws Exception;
+    SearchItemVo getIntroduction(String itemId);
 }

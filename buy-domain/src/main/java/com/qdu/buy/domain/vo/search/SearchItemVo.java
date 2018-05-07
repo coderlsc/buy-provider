@@ -13,7 +13,7 @@ public class SearchItemVo implements Serializable {
     private String id;
     private String title;
     private String sell_point;
-    private long price;
+    private Double price;
     private Integer num;
     private String image;
     private String category_name;
@@ -37,10 +37,10 @@ public class SearchItemVo implements Serializable {
     public void setSell_point(String sell_point) {
         this.sell_point = sell_point;
     }
-    public long getPrice() {
+    public Double getPrice() {
         return price;
     }
-    public void setPrice(long price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
     public String getImage() {

@@ -33,4 +33,8 @@ public class Constants {
         }
     }
 
+
+
+    public static final String PREFIX_CART_KEY="cart_list:";//后跟具体用户的id值
+
 }

@@ -1,14 +1,28 @@
 package com.qdu.buy.web.controller;
 
 
+import com.qdu.buy.cart.CartService;
+import com.qdu.buy.domain.po.company.Purchaser;
+import com.qdu.buy.domain.vo.cart.CartInfo;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 //跳转页面
 @Controller("baseController")
 @Slf4j
 public class BaseController {
+    @Autowired
+    private CartService cartService;
 
 
     //去登陆页面
@@ -41,6 +55,21 @@ public class BaseController {
     @RequestMapping(value = "toConfirm")
     public String toConfirm(){
         return "detailRegister";
+    }
+
+
+    //去购物车页面
+    @RequestMapping(value = "toCart")
+    public String toCart(HttpServletRequest request, Model model){
+        List<CartInfo> cartList=cartService.getCartItemList(request);
+        return "cart";
+    }
+
+    @RequestMapping(value = "/toPay")
+    public String toPay(HttpServletRequest request){
+        List<CartInfo> cartInfoList=new ArrayList<>();
+        request.setAttribute("cartInfoList",cartInfoList);
+        return "pay";
     }
 
 

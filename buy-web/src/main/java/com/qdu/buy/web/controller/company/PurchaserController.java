@@ -63,7 +63,8 @@ public class PurchaserController {
         else{
             result.setViewName("redirect:/toIndex");
             result.addObject("purchaser",purchaser1);
-            session.setAttribute("purchaser",purchaser1);
+            session.setAttribute("user",purchaser1);
+            session.setMaxInactiveInterval(1800);
         }
         return result;
     }
