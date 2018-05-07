@@ -108,7 +108,7 @@
 			<div class="foot" id="foot">
 				<label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
 				<a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
-				<div class="fr closing" ><a href="javaScript:void(0)" th:onclick="'javascript:getTotalPrice(\''+${#httpSession}+'\');'"  onclick="getTotalPrice()">结 算</a></div>
+				<div class="fr closing" ><a href="javaScript:void(0)"  onclick="getTotalPrice()">结 算</a></div>
 				<input type="hidden" id="cartTotalPrice" />
 				<div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
 				<div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
@@ -120,8 +120,28 @@
 			</div>
 		</div>
 				<div class="clear"></div>
-
-
+		<script th:inline="javascript">
+			/*<![CDATA[*/
+            function getTotalPrice() {
+                alert("结算中！！！   ");
+                var array = [];
+                $(".itemId").each(function (i, e) {
+                    var _this = $(e);
+                    if ($(".check").eq(i).prop("checked") == true) {
+                        array.push({itemId: $(e).val(), number: parseInt(_this.siblings(".count-input").val())});
+                    }
+                });
+                console.log(array);
+                var data = {cartList: array};
+                window.location.href = getURLPath() + "toPay?items=" + encodeURIComponent(JSON.stringify(data));
+            }
+            //获取请求绝对路径
+            function  getURLPath() {
+                var contextPath=[[${#httpServletRequest.getScheme()}]]+"://"+[[${#httpServletRequest.getServerName()}]] + ":"+ [[ ${#httpServletRequest.getServerPort()}]]  + [[${#httpServletRequest.getContextPath()}]] + "/";
+                return contextPath;
+            }
+			/*]]>*/
+		</script>
 
 				</div>
 

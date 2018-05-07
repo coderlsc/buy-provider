@@ -1,6 +1,8 @@
 package com.qdu.buy.web.controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.qdu.buy.cart.CartService;
 import com.qdu.buy.domain.po.company.Purchaser;
 import com.qdu.buy.domain.vo.cart.CartInfo;
@@ -10,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -66,7 +69,11 @@ public class BaseController {
     }
 
     @RequestMapping(value = "/toPay")
-    public String toPay(HttpServletRequest request){
+    public String toPay(@RequestParam(name = "items") String items,
+                        HttpServletRequest request){
+        JSONObject jsonObject=JSON.parseObject(items);
+        Map<String,Object> map=(Map<String, Object>) jsonObject.get("cartList");
+        
         List<CartInfo> cartInfoList=new ArrayList<>();
         request.setAttribute("cartInfoList",cartInfoList);
         return "pay";
