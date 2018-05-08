@@ -2,10 +2,12 @@ package com.qdu.buy.web.controller;
 
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.qdu.buy.cart.CartService;
 import com.qdu.buy.domain.po.company.Purchaser;
 import com.qdu.buy.domain.vo.cart.CartInfo;
+import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +28,9 @@ import java.util.Map;
 public class BaseController {
     @Autowired
     private CartService cartService;
+
+    @Autowired
+    private SearchService searchService;
 
 
     //去登陆页面
@@ -70,14 +75,24 @@ public class BaseController {
 
     @RequestMapping(value = "/toPay")
     public String toPay(@RequestParam(name = "items") String items,
-                        HttpServletRequest request){
+                        HttpServletRequest request,Model model){
         JSONObject jsonObject=JSON.parseObject(items);
-        Map<String,Object> map=(Map<String, Object>) jsonObject.get("cartList");
-        
-        List<CartInfo> cartInfoList=new ArrayList<>();
-        request.setAttribute("cartInfoList",cartInfoList);
+        List<CartInfo> cartInfoList=  JSON.parseArray(jsonObject.get("cartList")+"",CartInfo.class);
+        cartInfoList.forEach(x->x.setTitle(searchService.getIntroduction(x.getItemId()+"").getTitle()));
+        cartInfoList.forEach(x->x.setTotalPrice(searchService.getIntroduction(x.getItemId()+"").getPrice()*x.getNumber()));
+        cartInfoList.forEach(x->x.setPrice(searchService.getIntroduction(x.getItemId()+"").getPrice()));
+        cartInfoList.forEach(x->x.setImage(searchService.getIntroduction(x.getItemId()+"").getImage()));
+        request.setAttribute("cartList",cartInfoList);
+        model.addAttribute("cartList",cartInfoList);
         return "pay";
     }
+
+
+
+
+
+
+
 
 
 

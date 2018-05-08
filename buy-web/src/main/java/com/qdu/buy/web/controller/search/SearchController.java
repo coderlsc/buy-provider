@@ -60,6 +60,7 @@ public class SearchController {
             }
         }catch(Exception e){
             log.error("获取缓存失败"+e.getMessage(),e);
+            searchResult= searchService.getIntroduction(itemId);
         }
         model.addAttribute("item",searchResult);
         //把结果传递给页面
