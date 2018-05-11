@@ -3,6 +3,7 @@ package com.qdu.buy.company;
 import com.qdu.buy.domain.po.company.Purchaser;
 import com.qdu.buy.domain.po.company.Supplier;
 
+//service
 public interface SupplierService {
 
 
