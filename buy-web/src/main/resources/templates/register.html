@@ -20,12 +20,12 @@
 <body>
 
 <div class="login-boxtitle">
-    <a href="home/demo.html"><img alt="" src="../images/logobig.png"  th:src="@{/images/logobig.png}" /></a>
+    <a th:href="${registerCast.url}" href="home/demo.html"><img alt="" src="../images/logobig.png" th:src="${registerCast.pic}" /></a>
 </div>
 
 <div class="res-banner">
     <div class="res-main">
-        <div class="login-banner-bg"><span></span><img src="../images/big.jpg" th:src="@{/images/big.jpg}"  /></div>
+        <div class="login-banner-bg"><span></span><img src="../images/big.jpg" th:src="${registerCast.pic}"  /></div>
         <div class="login-box" style="margin-right: 100px; height: 600px; ">
 
             <div class="am-tabs" id="doc-my-tabs">

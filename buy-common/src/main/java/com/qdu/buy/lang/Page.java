@@ -14,6 +14,8 @@ import java.util.List;
 @Data
 public class Page<T> implements Serializable {
     private int totalCount;//总条数
+    private int total;
+
     private int pageNo;//当前页码,从1开始
     private int pageSize = 10;//每页记录数
     private int totalPage;//总页数
@@ -30,21 +32,21 @@ public class Page<T> implements Serializable {
         this.rows = rows;
     }
 
-    public T getRow(int i) {
-        if (rows != null) {
-            return rows.get(i);
-        } else {
-            return null;
-        }
-    }
+//    public T getRow(int i) {
+//        if (rows != null) {
+//            return rows.get(i);
+//        } else {
+//            return null;
+//        }
+//    }
 
-    public T getFirstRow() {
-        return isEmpty() ? null : getRow(0);
-    }
-
-    public T getLastRow() {
-        return getRow(rows == null ? 0 : rows.size());
-    }
+//    public T getFirstRow() {
+//        return isEmpty() ? null : getRow(0);
+//    }
+//
+//    public T getLastRow() {
+//        return getRow(rows == null ? 0 : rows.size());
+//    }
 
     public boolean isEmpty() {
         return rows == null || rows.size() == 0;

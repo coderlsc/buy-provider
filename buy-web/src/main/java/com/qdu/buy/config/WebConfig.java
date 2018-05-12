@@ -1,6 +1,7 @@
 package com.qdu.buy.config;
 
 
+import com.qdu.buy.web.interceptor.AdminInterceptor;
 import com.qdu.buy.web.interceptor.LoginInterceptor;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -40,6 +41,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public void addInterceptors(InterceptorRegistry registry) {
         //拦截规则：除了login，其他都拦截判断
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/user/**").addPathPatterns("/cart/**");
+        registry.addInterceptor(new AdminInterceptor()).addPathPatterns("/admin/**").excludePathPatterns("/admin/login");
 //        .excludePathPatterns("/toLogin").excludePathPatterns("/user/login").excludePathPatterns("/")
 //                .excludePathPatterns("/toRegister").excludePathPatterns("/index").excludePathPatterns("/purchaser/register").excludePathPatterns("/purchaser/login")
 //                .excludePathPatterns("/toConfirm").excludePathPatterns("/downloadTemplate").excludePathPatterns("/*.html");

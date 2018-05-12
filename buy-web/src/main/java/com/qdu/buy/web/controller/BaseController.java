@@ -5,13 +5,17 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.qdu.buy.cart.CartService;
+import com.qdu.buy.content.ContentService;
 import com.qdu.buy.domain.po.company.Purchaser;
+import com.qdu.buy.domain.po.content.Content;
 import com.qdu.buy.domain.vo.cart.CartInfo;
+import com.qdu.buy.impl.ContentServiceImpl;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,6 +36,9 @@ public class BaseController {
     @Autowired
     private SearchService searchService;
 
+    @Autowired
+    private ContentService contentService;
+
 
     //去登陆页面
     @RequestMapping(value = "toLogin")
@@ -44,13 +51,21 @@ public class BaseController {
     //去首页
     @RequestMapping(value = "toIndex")
     public ModelAndView toIndex(){
+        //携带各种广告去首页显示
+        List<Content> broadCasts=contentService.getContentByCid(Long.valueOf(3));
+        Content registerContent=contentService.getContentByCid(Long.valueOf(4)).get(0);
         ModelAndView modelAndView=new ModelAndView("index");
+        modelAndView.addObject("registerCast",registerContent);
+        modelAndView.addObject("broadCasts",broadCasts);
+
         return modelAndView;
     }
 
     //去首页
     @RequestMapping(value = "toRegister")
-    public String toRegister(){
+    public String toRegister(HttpServletRequest request,Model model){
+        Content registerContent=contentService.getContentByCid(Long.valueOf(4)).get(0);
+        model.addAttribute("registerCast",registerContent);
         return "register";
     }
 
@@ -86,6 +101,21 @@ public class BaseController {
         model.addAttribute("cartList",cartInfoList);
         return "pay";
     }
+
+
+    @RequestMapping(value = "/adminLogin")
+    public String toBackend(HttpServletRequest request){
+        return "admin_login";
+    }
+
+    @RequestMapping(value = "/admin/toIndex")
+    public String toIndex(HttpServletRequest request){
+        return "admin_index";
+    }
+
+
+
+
 
 
 
