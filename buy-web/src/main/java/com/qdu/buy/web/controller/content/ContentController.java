@@ -11,13 +11,18 @@ import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.*;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -118,6 +123,34 @@ public class ContentController {
 		}
 		result.put("result", "delesuccess");
 		return  result;
+	}
+
+	@RequestMapping(value="addContent")
+	public String adddContent(
+			@RequestParam(value="pic") MultipartFile pic,
+			HttpSession session,
+			HttpServletRequest request,Content content,BindingResult result) throws IOException{
+			if(result.hasErrors()){
+				List<ObjectError> ls = result.getAllErrors();
+				for (int i = 0; i < ls.size(); i++) {
+					log.info("参数警告"+ls.get(i).toString());
+				}
+			}
+			//保存文件
+			try {
+				String head = upDownService.updateHead(pic);
+				content.setPic(head);
+				content.setPic2(head);
+				content.setSubTitle(content.getTitle());
+				contentService.addContent(content);
+			} catch (IOException e) {
+				log.error("上传失败"+e.getMessage(),e);
+			} catch (Exception e) {
+				log.error("上传失败"+e.getMessage(),e);
+			}
+			//重定向到添加图书页面
+			return "addcontent";
+
 	}
 
 	

@@ -70,11 +70,26 @@ public class AdminController {
         return "advertising";
     }
 
+    @RequestMapping(value="addcontent")
+    public String addcontent(){
+        return "addcontent";
+    }
+
     @RequestMapping(value="user_list")
     public String user_list(){
         return "user_list";
     }
 
+
+    @RequestMapping(value="item_list")
+    public String item_list(){
+        return "item_list";
+    }
+
+    @RequestMapping(value="add_item")
+    public String add_item(){
+        return "add_item";
+    }
 
 
 

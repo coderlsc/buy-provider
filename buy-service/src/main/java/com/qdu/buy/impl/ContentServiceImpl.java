@@ -107,6 +107,13 @@ public class ContentServiceImpl implements ContentService {
         contentDao.deleteByPrimaryKey(id);
     }
 
+    @Override
+    public  void addContent(Content content){
+        content.setCreated(new Date());
+        content.setUpdated(new Date());
+        contentDao.insert(content);
+    }
+
 //    //获取所有类别
 //    List<Content> getAllContentCate(){
 //

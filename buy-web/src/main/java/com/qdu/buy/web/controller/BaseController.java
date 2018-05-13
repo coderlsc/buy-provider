@@ -113,6 +113,11 @@ public class BaseController {
         return "admin_index";
     }
 
+    @RequestMapping(value = "/user/toPersonCenter")
+    public String toPersonCenter( HttpServletRequest request,Model model){
+        return "user_index";
+    }
+
 
 
 

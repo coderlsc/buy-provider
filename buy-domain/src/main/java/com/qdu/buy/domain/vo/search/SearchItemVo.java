@@ -3,8 +3,10 @@ package com.qdu.buy.domain.vo.search;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -18,7 +20,10 @@ public class SearchItemVo implements Serializable {
     private String image;
     private String category_name;
     private String item_desc;
+    private Date createTime;
+    private String dateStr;//日期时间的字符串格式
     private List<String> images;//展示的图片链接集合
+    private String smallImage;//小图标
     public String getId() {
         return id;
     }
@@ -62,6 +67,11 @@ public class SearchItemVo implements Serializable {
         this.item_desc = item_desc;
     }
 
+
+    public String getDateStr(){
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+        return simpleDateFormat.format(this.createTime);
+    }
     public List<String> getImages() {
         List<String> imageList=new ArrayList<>();
         if(this.image==null||"".equals(this.image)){
@@ -72,6 +82,9 @@ public class SearchItemVo implements Serializable {
         imageList=Arrays.asList(imageArray);
         this.images=imageList;
         return images;
+    }
+    public String getSmallImage(){
+        return getImages().get(0);
     }
 
 //    public void setImages(List<String> images) {

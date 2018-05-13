@@ -36,78 +36,62 @@
 
 <body>
 
-添加广告内容页面
-<form enctype="multipart/form-data"  method="post" class="form-horizontal" action="book/addBook.do" >
+添加广告内容
+<form enctype="multipart/form-data"  method="post" class="form-horizontal" th:action="@{/content/addContent}" action="book/addBook.do" >
     <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">书籍名称</label>
+        <label for="categoryId" class="col-sm-2 control-label">内容类别</label>
         <div class="col-sm-10">
-            <input  name="name" type="text" required class="form-control" id="name" placeholder="输入书籍名字">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="author" class="col-sm-2 control-label">作者</label>
-        <div class="col-sm-10">
-            <input name="author" type="text" required class="form-control" id="author" placeholder="作者">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="price" class="col-sm-2 control-label">价格</label>
-        <div class="col-sm-10">
-            <input name="price" type="number" required class="form-control" id="price" placeholder="输入价格">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="publishdate" class="col-sm-2 control-label">出版日期</label>
-        <div class="col-sm-10">
-            <input  name="publishdate" type="date" required class="form-control" id="publishdate" placeholder="出版日期" />
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="cateogoryid" class="col-sm-2 control-label">书籍类别</label>
-        <div class="col-sm-10">
-            <select class="form-control"  id="categoryid" name="categoryid">
+            <select class="form-control"  id="categoryId" name="categoryId">
+                <option value ="1">商城</option>
+                <option value ="2">首页</option>
+                <option selected="selected" value="3">首页轮播图</option>
+                <option value="4">注册页面背景图</option>
+                <option value="5">登录页面背景图</option>
             </select>
             <label id="message_cate" style="color:red;"></label>
         </div>
     </div>
     <div class="form-group">
-        <label for="status" class="col-sm-2 control-label">状态</label>
+        <label for="title" class="col-sm-2 control-label">内容标题</label>
         <div class="col-sm-10">
-            <select class="form-control" id="status" name="status">
-                <option value="1" selected>上架</option>
-                <option value="0">下架</option>
-            </select>
+            <input  name="title" type="text" required class="form-control" id="title" placeholder="输入内容标题">
         </div>
     </div>
     <div class="form-group">
-        <label for="status" class="col-sm-2 control-label">库存</label>
+        <label for="titleDesc" class="col-sm-2 control-label">内容标题消息描述</label>
         <div class="col-sm-10">
-            <input class="form-control" required="required" name="total" type="number" value="1" min="1" max="10000"/>
+            <input  name="titleDesc" type="text" required class="form-control" id="titleDesc" placeholder="输入内容标题详细描述">
         </div>
     </div>
     <div class="form-group">
-        <div class="col-sm-2">
-            <button type="button" onclick="addpic()" class="btn btn-primary">添加图片</button>
+        <label for="url" class="col-sm-2 control-label">URL链接地址</label>
+        <div class="col-sm-10">
+            <input name="url" type="text" required class="form-control" id="url" placeholder="URL链接地址">
         </div>
-        <br>
-        <div class="col-sm-10" id="pics">
+    </div>
+    <div class="form-group">
+        <label for="content" class="col-sm-2 control-label">具体内容</label>
+        <div class="col-sm-10">
+            <input  name="content" type="text" required class="form-control" id="content" placeholder="输入具体内容">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="content" class="col-sm-2 control-label">上传图片</label>
+        <div class="col-sm-10">
+            <input class='btn btn-primary' type='file' name='pic' onchange='showImg()' />
         </div>
         <div id="result"></div>
     </div>
+
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">提交</button>
         </div>
     </div>
 </form>
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" th:src="@{/backend/assets/js/jquery.min.js}" src="js/jquery.min.js"></script>
 <script type="text/javascript">
-    var i=0;
-    function addpic(){
-        var ss= "<input class='btn btn-primary' type='file' name='pic' onchange='showImg()' />"+
-            "是否是封面图片"+"<input type='radio' name='fm' value='"+(i++)+"'/>";
-        $("#pics").append(ss);
-    }
+
     $("button:submit").click(function(event){
         var caid=$("#categoryid").val();
         if(caid=="all"){
@@ -116,12 +100,6 @@
             event.preventDefault(); // 兼容标准浏览器
         }
     });
-    /* function validate(){
-     var caid=$("#categoryid").val();
-     if(caid=="all"){
-
-     }
-     }	 */
     // 将文件以Data URL形式进行读入页面
     function showImg(){
         var result = $("#result");
@@ -148,26 +126,6 @@
 
     }
 
-    $(function(){
-        $.ajax({
-            url:"cate/queryAllCate.do",
-            dataType:"json",
-            type:"post",
-            data:"",
-            success:function(data){
-                cates=data;
-                var options="<option value='all'>===全部===</option>";
-                $.each(cates,function(key,value){
-                    options+="<option value='"+key+"'>"+value+"</option>";
-                });
-                $("#categoryid").html(options);
-            },
-            error:function(){
-
-            }
-        });
-
-    });
 
 </script>
 </body>

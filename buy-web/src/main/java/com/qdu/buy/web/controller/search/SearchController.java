@@ -1,8 +1,11 @@
 package com.qdu.buy.web.controller.search;
 
 
-import com.bwton.dist.lang.Page;
+import com.qdu.buy.domain.po.content.Content;
+import com.qdu.buy.domain.po.query.ItemPageQuery;
+import com.qdu.buy.domain.po.query.SearchQuery;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
+import com.qdu.buy.lang.Page;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.net.URLDecoder;
 
@@ -65,6 +69,21 @@ public class SearchController {
         model.addAttribute("item",searchResult);
         //把结果传递给页面
         return "introduction";
+    }
+
+    @RequestMapping("/queryItemPage")
+    @ResponseBody
+    public Page<SearchItemVo> queryBooks(Integer currentPage,
+                                                     Integer pageSize,
+                                                     String name,
+                                                     String categoryid){
+        SearchQuery query=new SearchQuery();
+        query.setTitle(name);
+        query.setCid(Long.valueOf(categoryid));
+        query.setPageNo(currentPage);
+        query.setPageSize(pageSize);
+        Page<SearchItemVo> result=searchService.queryItemPage(query);
+        return  result;
     }
 
 

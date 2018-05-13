@@ -1,15 +1,14 @@
 package com.qdu.buy.impl;
 
-import com.bwton.dist.lang.Page;
 import com.qdu.buy.dao.search.ItemDao;
 import com.qdu.buy.dao.search.ItemDescDao;
+import com.qdu.buy.domain.po.query.ItemPageQuery;
 import com.qdu.buy.domain.po.query.SearchQuery;
-import com.qdu.buy.domain.po.search.ItemDesc;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
+import com.qdu.buy.lang.Page;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -44,5 +43,13 @@ public class SearchServiceImpl implements SearchService {
     public SearchItemVo getIntroduction(String itemId) {
         SearchItemVo searchItemVo=itemDao.queryIntroduceByItemId(Long.valueOf(itemId));
         return searchItemVo;
+    }
+
+    @Override
+    public Page<SearchItemVo> queryItemPage(SearchQuery query) {
+        List<SearchItemVo> result=itemDao.queryItemPage(query);
+        int rowsCount=itemDao.queryCount(query);
+        Page<SearchItemVo> page=new Page<>(rowsCount,query.getPageNo(),query.getPageSize(),result);
+        return page;
     }
 }

@@ -29,6 +29,8 @@ public interface ContentService {
 
     void deleteContentById(Long id);
 
+    void addContent(Content content);
+
 //    //获取所有类别
 //    List<Content> getAllContentCate();
 }
