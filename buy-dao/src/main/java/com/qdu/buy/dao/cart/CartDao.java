@@ -22,4 +22,7 @@ public interface CartDao {
     List<CartInfo> queryCartListByUserId(@Param("userId") Long userId);
 
     Cart getCartByUserIdAndItemId(@Param("userId") Long userId,@Param("itemId") Long itemId);
+
+
+    int deleteCartByUserIdandItemId(@Param("itemId") Long itemId,@Param("userId") Long userId);
 }

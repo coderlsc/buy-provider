@@ -8,6 +8,7 @@ import com.qdu.buy.cart.CartService;
 import com.qdu.buy.content.ContentService;
 import com.qdu.buy.domain.po.company.Purchaser;
 import com.qdu.buy.domain.po.content.Content;
+import com.qdu.buy.domain.po.search.ItemCat;
 import com.qdu.buy.domain.vo.cart.CartInfo;
 import com.qdu.buy.impl.ContentServiceImpl;
 import com.qdu.buy.search.SearchService;
@@ -53,12 +54,15 @@ public class BaseController {
     public ModelAndView toIndex(){
         //携带各种广告去首页显示
         List<Content> broadCasts=contentService.getContentByCid(Long.valueOf(3));
-        Content registerContent=contentService.getContentByCid(Long.valueOf(4)).get(0);
         ModelAndView modelAndView=new ModelAndView("index");
-        modelAndView.addObject("registerCast",registerContent);
+        List<ItemCat> cateList=searchService.queryCateList();
         modelAndView.addObject("broadCasts",broadCasts);
-
+        modelAndView.addObject("cateList",cateList);
         return modelAndView;
+    }
+    @RequestMapping(value = "/")
+    public String showIndex(){
+        return "forward:/toIndex";
     }
 
     //去首页
@@ -71,7 +75,7 @@ public class BaseController {
 
     @RequestMapping(value="index")
     public String index(){
-        return "index";
+        return "forward:/toIndex";
     }
 
     //去认证页面
@@ -92,6 +96,7 @@ public class BaseController {
     public String toPay(@RequestParam(name = "items") String items,
                         HttpServletRequest request,Model model){
         JSONObject jsonObject=JSON.parseObject(items);
+        Double totalPay=0.0;
         List<CartInfo> cartInfoList=  JSON.parseArray(jsonObject.get("cartList")+"",CartInfo.class);
         cartInfoList.forEach(x->x.setTitle(searchService.getIntroduction(x.getItemId()+"").getTitle()));
         cartInfoList.forEach(x->x.setTotalPrice(searchService.getIntroduction(x.getItemId()+"").getPrice()*x.getNumber()));
@@ -99,6 +104,11 @@ public class BaseController {
         cartInfoList.forEach(x->x.setImage(searchService.getIntroduction(x.getItemId()+"").getImage()));
         request.setAttribute("cartList",cartInfoList);
         model.addAttribute("cartList",cartInfoList);
+        for(CartInfo cartInfo:cartInfoList){
+                totalPay=totalPay+Double.valueOf(cartInfo.getTotalPrice());
+        }
+        request.setAttribute("totalPay",totalPay);
+        model.addAttribute("totalPay",totalPay);
         return "pay";
     }
 

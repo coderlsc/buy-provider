@@ -24,6 +24,7 @@ public class SearchItemVo implements Serializable {
     private String dateStr;//日期时间的字符串格式
     private List<String> images;//展示的图片链接集合
     private String smallImage;//小图标
+    private String status;//状态
     public String getId() {
         return id;
     }

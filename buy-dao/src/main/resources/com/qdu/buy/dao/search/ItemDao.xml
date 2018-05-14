@@ -27,6 +27,7 @@
     <result column="category_name" property="category_name" jdbcType="VARCHAR" />
     <result column="item_desc" property="item_desc" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+    <result column="status" property="status" jdbcType="VARCHAR" />
   </resultMap>
 
 

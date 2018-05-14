@@ -2,6 +2,8 @@ package com.qdu.buy.web.controller.order;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.netflix.discovery.converters.Auto;
+import com.qdu.buy.cart.CartService;
 import com.qdu.buy.domain.po.company.Purchaser;
 import com.qdu.buy.domain.po.content.Content;
 import com.qdu.buy.domain.po.order.Order;
@@ -33,6 +35,10 @@ public class OrderController {
 
     @Autowired
     private SearchService searchService;
+
+    @Autowired
+    private CartService cartService;
+
 
 
     @RequestMapping("/user/viewOrders")
@@ -73,6 +79,7 @@ public class OrderController {
         Long userId=((Purchaser)request.getSession().getAttribute("user")).getId();
         //循环插入订单表 插入订单明细表  插入订单物流表
         orderService.createOrders(cartInfoList,userId);
+        cartService.deleteCartItem(cartInfoList,userId);
         return "pay_success";
     }
 

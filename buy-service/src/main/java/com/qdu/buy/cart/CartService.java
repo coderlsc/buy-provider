@@ -20,5 +20,12 @@ public interface CartService {
     void refreshCart(Long itemId,Long userId,Integer number);
 
 
+    void deleteCartItem(List<CartInfo> list,Long userId);
+
+    void deleCartItem(Long itemId,Long userId);
+
+
+
+
 
 }

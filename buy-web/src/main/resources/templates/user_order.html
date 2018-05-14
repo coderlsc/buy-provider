@@ -66,13 +66,13 @@
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
+								<div class="menu-hd"><a th:href="@{/toIndex}" href="#" target="_top" class="h">商城首页</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
 								<div class="menu-hd MyShangcheng"><a th:href="@{/user/toPersonCenter}" href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" th:href="@{/cart/toCart.html}" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
 								<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
@@ -124,23 +124,17 @@
 
 					<div class="user-order">
 
-						<!--标题 -->
-						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">订单管理</strong> / <small>Order</small></div>
-						</div>
-						<hr/>
-
 						<!-- 订单列表-->
 						<!-- 条件查询 -->
 						<div id="toolbar">
 							<form class="form-inline" role="form">
 								<div class="form-group">
-									<label  for="name">商品信息:</label>
+									<label  for="name">商品信息</label>
 									<input type="text" class="form-control"
 										   id="name" name="name" placeholder="请输入商品信息">
 								</div>
 								<div class="form-group">
-									<label  for="cate">订单状态:</label>
+									<label  for="cate">订单状态</label>
 									<select  class="form-control"
 											 id="cate" name="cate">
 										<option selected="selected" value="">====全部====</option>
@@ -373,7 +367,7 @@
 						<p>
 							<a href="#">恒望科技</a>
 							<b>|</b>
-							<a href="#">商城首页</a>
+							<a th:href="@{/toIndex}" href="#">商城首页</a>
 							<b>|</b>
 							<a href="#">支付宝</a>
 							<b>|</b>
@@ -389,7 +383,6 @@
 							<em>© 2015-2025 Hengwang.com 版权所有. 更多模板 <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></em>
 						</p>
 					</div>
-
 				</div>
 			</div>
 
@@ -404,8 +397,6 @@
 						<p><i class="am-icon-balance-scale"></i>我的交易</p>
 						<ul>
 							<li><a th:href="@{/user/viewOrders}" href="order.html">订单管理</a></li>
-							<li> <a href="change.html">退款售后</a></li>
-							<li> <a href="comment.html">评价商品</a></li>
 						</ul>
 					</li>
 

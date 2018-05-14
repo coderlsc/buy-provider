@@ -39,19 +39,20 @@
       <div class="title_names">搜索查询</div>
       <ul class="search_content clearfix">
        <li><label class="l_f">产品名称</label><input id="name" name="" type="text"  class="text_add" placeholder="输入品牌名称"  style=" width:250px"/></li>
-       <li><label class="l_f">添加时间</label><input class="inline laydate-icon" id="start" style=" margin-left:10px;"></li>
+       <li>
           <div class="form-group">
-              <label  for="cate">内容分类:</label>
-              <select  class="form-control"
+              <label  for="cate">产品类型:</label>
+              <select  class="form-control" style="margin-top:-30px; margin-left:100px; width:250px"
                        id="cate" name="cate">
-                  <option value ="1">商城</option>
-                  <option value ="2">首页</option>
-                  <option selected="selected" value="3">首页轮播图</option>
-                  <option value="4">注册页面背景图</option>
-                  <option value="5">登录页面背景图</option>
+                  <!--<option value ="1">商城</option>-->
+                  <!--<option value ="2">首页</option>-->
+                  <!--<option selected="selected" value="3">首页轮播图</option>-->
+                  <!--<option value="4">注册页面背景图</option>-->
+                  <!--<option value="5">登录页面背景图</option>-->
               </select>
           </div>
-          <li style="width:90px;"><button type="button" class="btn_search"><i class="icon-search"></i>查询</button></li>
+       </li>
+          <li style="width:90px;"><button onclick="queryData();" type="button" class="btn_search et"><i class="icon-search"></i>查询</button></li>
       </ul>
     </div>
      <div class="border clearfix">
@@ -108,6 +109,27 @@
          var to_update=false;
          var isAll=false;
          var selected=false;
+         function queryAllCate(){
+             $.ajax({
+                 url:getURLPath()+"queryCateList",
+                 data:"",
+                 dataType:"json",
+                 type:"post",
+                 success:function(data){
+                     cates=data;
+                     var options="<option value=''>===全部===</option>";
+                     $.each(cates, function(index,item){
+                         console.log(item);
+                         options+="<option value='"+item.id+"'>"+item.name+"</option>";
+                     });
+
+                     $("#cate").html(options);
+                 },
+                 error:function(){
+
+                 }
+             });
+         }
          //定义一个是否是修改命令的标示符  默认是不是修改只是查看书籍详细信息
          $("#cate").change(function(){
              sssss.bootstrapTable("refresh");
@@ -116,6 +138,7 @@
              sssss.bootstrapTable("refresh");
          });
          $(function(){
+             queryAllCate();
              queryData();
              $(".et").on("click",function(){
                  //重新请求
@@ -218,7 +241,7 @@
                          title:"价格"
                      },
                      {
-                         field:"datestr",
+                         field:"dateStr",
                          title:"加入时间"
                      },
                      {

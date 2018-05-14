@@ -36,7 +36,7 @@
 					</div>
 					<div class="menu-hd" th:if="${session.user!=null}">
 						<!--　 <a href="comments.html" th:href="@{/product/comments(prodId=${prod.id})}" th:if="${not #lists.isEmpty(prod.comments)}">view</a>-->
-						<a href="/toLogin" th:href="${#httpServletRequest.getContextPath()+'/purchaserInfo'}" th:text="${session.user.companyName}"  target="_top" class="h"></a>
+						<a href="/toLogin" th:href="@{/user/toPersonCenter}" th:text="${session.user.companyName}"  target="_top" class="h"></a>
 					</div>
 					<a href="toRegister" th:href="${#httpServletRequest.getContextPath()+'/toRegister'}" target="_top">免费注册</a>
 				</div>
@@ -46,7 +46,7 @@
 					<div class="menu-hd"><a href="#" th:href="@{/toIndex}" target="_top" class="h">商城首页</a></div>
 				</div>
 				<div class="topMessage my-shangcheng">
-					<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
+					<div class="menu-hd MyShangcheng"><a href="#" th:href="@{/user/toPersonCenter}" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 				</div>
 				<div class="topMessage mini-cart">
 					<div class="menu-hd"><a id="mc-menu-hd" th:href="@{/cart/toCart}" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
@@ -94,14 +94,14 @@
 				<tr th:each="cartInfo : ${cartList} ">
 
 					<td class="checkbox"><input class="check-one check" type="checkbox"/></td>
-					<td class="goods" style="width: 400px;"><img th:src="${cartInfo.smallImage}" src="images/2.jpg" alt=""/><span th:text="${cartInfo.title}">Canon/佳能 PowerShot SX50 HS</span></td>
+					<td class="goods" style="width: 400px;"><a href="#" th:href="@{/introduction.html(itemId=${cartInfo.itemId})}"><img th:src="${cartInfo.smallImage}" src="images/2.jpg" alt=""/><span th:text="${cartInfo.title}">Canon/佳能 PowerShot SX50 HS</span></a></td>
 					<td class="price" th:text="${cartInfo.price}">3888.50</td>
 					<td class="count" style="width: 150px;"><span class="reduce"></span>
 						<input class="count-input" type="text" th:value="${cartInfo.number}" value="1"/>
 						<input type="hidden" class="itemId" th:value="${cartInfo.itemId}"/>
 						<span class="add">+</span></td>
 					<td class="subtotal" th:value="${cartInfo.totalPrice}" th:text="${cartInfo.totalPrice}">3888.50</td>
-					<td class="operation"><span class="delete">删除</span></td>
+					<td class="operation"><a th:name="${cartInfo.itemId}" class="delete">删除</a></td>
 				</tr>
 				</tbody>
 			</table>
@@ -123,7 +123,6 @@
 		<script th:inline="javascript">
 			/*<![CDATA[*/
             function getTotalPrice() {
-                alert("结算中！！！   ");
                 var array = [];
                 $(".itemId").each(function (i, e) {
                     var _this = $(e);
@@ -132,14 +131,37 @@
                     }
                 });
                 console.log(array);
-                var data = {cartList: array};
-                window.location.href = getURLPath() + "toPay?items=" + encodeURIComponent(JSON.stringify(data));
+                if (array === undefined || array.length == 0) {
+					alert("请选择商品");
+				}
+				else{
+                    alert("结算中...");
+                    var data = {cartList: array};
+                    window.location.href = getURLPath() + "toPay?items=" + encodeURIComponent(JSON.stringify(data));
+				}
             }
             //获取请求绝对路径
             function  getURLPath() {
                 var contextPath=[[${#httpServletRequest.getScheme()}]]+"://"+[[${#httpServletRequest.getServerName()}]] + ":"+ [[ ${#httpServletRequest.getServerPort()}]]  + [[${#httpServletRequest.getContextPath()}]] + "/";
                 return contextPath;
             }
+            $(".delete").on('click',function(){
+					var a=$(this).attr('name');
+					$.ajax({
+                        type:'post',
+                        url:getURLPath()+"cart/deleCartItem",
+                        dataType:'json',
+                        data:{itemId:a},
+						success:function (data) {
+							alert("删除成功！");
+							window.location.href=getURLPath()+"cart/toCart";
+                        },
+						error:function () {
+							alert("删除失败 请稍后重试...");
+							window.location.href=getURLPath()+"cart/toCart";
+                        }
+                    });
+			});
 			/*]]>*/
 		</script>
 

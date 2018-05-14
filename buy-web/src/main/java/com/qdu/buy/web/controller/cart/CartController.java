@@ -114,6 +114,17 @@ public class CartController {
 		result.put("result","1");
 		return result;
 	}
+
+	@RequestMapping("/deleCartItem")
+	@ResponseBody
+	public Map<String,Object> deleCartItem(@RequestParam("itemId") Long itemId,
+											HttpServletRequest request, HttpServletResponse response) {
+		Purchaser purchaser=(Purchaser) request.getSession().getAttribute("user");
+		cartService.deleCartItem(itemId,purchaser.getId());
+		Map<String,Object> result=new HashMap<>();
+		result.put("result","1");
+		return result;
+	}
 	
 //	@RequestMapping("/cart/delete/{itemId}")
 //	public String deleteCartItem(@PathVariable Long itemId, HttpServletRequest request ,

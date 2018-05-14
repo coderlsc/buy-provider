@@ -37,7 +37,7 @@
 			</div>
 			<div class="menu-hd" th:if="${session.user!=null}">
 				<!--　 <a href="comments.html" th:href="@{/product/comments(prodId=${prod.id})}" th:if="${not #lists.isEmpty(prod.comments)}">view</a>-->
-				<a href="/toLogin" th:href="${#httpServletRequest.getContextPath()+'/purchaserInfo'}" th:text="${session.user.companyName}"  target="_top" class="h"></a>
+				<a href="/toLogin" th:href="@{/user/toPersonCenter}" th:text="${session.user.companyName}"  target="_top" class="h"></a>
 			</div>
 			<a href="toRegister" th:href="${#httpServletRequest.getContextPath()+'/toRegister'}" target="_top">免费注册</a>
 		</div>
@@ -47,7 +47,7 @@
 			<div class="menu-hd"><a th:href="@{/toIndex}" href="#" target="_top" class="h">商城首页</a></div>
 		</div>
 		<div class="topMessage my-shangcheng">
-			<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
+			<div class="menu-hd MyShangcheng"><a th:href="@{/user/toPersonCenter}" href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
 		</div>
 		<div class="topMessage mini-cart">
 			<div class="menu-hd"><a id="mc-menu-hd" href="#" th:href="@{/cart/toCart}" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>

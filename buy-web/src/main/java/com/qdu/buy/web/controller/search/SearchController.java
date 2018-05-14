@@ -4,6 +4,7 @@ package com.qdu.buy.web.controller.search;
 import com.qdu.buy.domain.po.content.Content;
 import com.qdu.buy.domain.po.query.ItemPageQuery;
 import com.qdu.buy.domain.po.query.SearchQuery;
+import com.qdu.buy.domain.po.search.ItemCat;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.lang.Page;
 import com.qdu.buy.search.SearchService;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.net.URLDecoder;
+import java.util.List;
 
 @Controller
 @Slf4j
@@ -31,14 +33,16 @@ public class SearchController {
     private RedisTemplate<String,Object> redisTemplate;
 
     @RequestMapping("/search")
-    public String search(@RequestParam("queryStr")String queryStr,
-                         @RequestParam(defaultValue="1")Integer pageNo, Model model) throws Exception {
+    public String search(@RequestParam(value = "queryStr",defaultValue = "")String queryStr,
+                         @RequestParam(defaultValue="1") Integer pageNo,
+                         @RequestParam(value = "cid",defaultValue ="")String cid,
+                        Model model) throws Exception {
         //int a = 1/0;
         //调用服务执行查询
         //把查询条件进行转码，解决get乱码问题
         queryStr = URLDecoder.decode(queryStr,"utf-8");
 
-        Page<SearchItemVo> searchResult = searchService.search(queryStr, pageNo);
+        Page<SearchItemVo> searchResult = searchService.search(queryStr, cid,pageNo);
         //把结果传递给页面
         model.addAttribute("queryStr", queryStr);
         model.addAttribute("totalPages", searchResult.getTotalPage());
@@ -47,6 +51,7 @@ public class SearchController {
         //返回逻辑视图
         return "search";
     }
+
 
     @RequestMapping("/introduction")
     public String introduction(@RequestParam("itemId")String itemId, Model model) throws Exception {
@@ -71,6 +76,16 @@ public class SearchController {
         return "introduction";
     }
 
+    @RequestMapping("/queryCateList")
+    @ResponseBody
+    public List<ItemCat> queryCateList(){
+        List<ItemCat> cateList=searchService.queryCateList();
+        return  cateList;
+    }
+
+
+
+
     @RequestMapping("/queryItemPage")
     @ResponseBody
     public Page<SearchItemVo> queryBooks(Integer currentPage,
@@ -79,7 +94,7 @@ public class SearchController {
                                                      String categoryid){
         SearchQuery query=new SearchQuery();
         query.setTitle(name);
-        query.setCid(Long.valueOf(categoryid));
+        query.setCid("".equals(categoryid)?null:Long.valueOf(categoryid));
         query.setPageNo(currentPage);
         query.setPageSize(pageSize);
         Page<SearchItemVo> result=searchService.queryItemPage(query);

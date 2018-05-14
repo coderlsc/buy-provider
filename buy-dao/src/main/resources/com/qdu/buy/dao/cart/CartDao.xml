@@ -129,4 +129,20 @@
     </where>
     order by  update_time  desc
   </select>
+
+
+    <delete id="deleteCartByUserIdandItemId" parameterType="java.lang.Long">
+        DELETE
+        FROM
+        cart
+        <where>
+          1=1
+          <if test="userId!=null and userId!=''">
+            AND user_id=#{userId,jdbcType=BIGINT}
+          </if>
+          <if test="itemId!=null and itemId!=''">
+            AND item_id=#{itemId,jdbcType=BIGINT}
+          </if>
+        </where>
+    </delete>
 </mapper>
