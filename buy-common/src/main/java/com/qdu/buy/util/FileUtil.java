@@ -1,15 +1,10 @@
 package com.qdu.buy.util;
 
-import jdk.internal.util.xml.impl.Input;
-import jdk.nashorn.internal.objects.Global;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.fileupload.disk.DiskFileItem;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import java.io.*;
-import java.util.UUID;
 
 /**
  * @Descripition: File工具类

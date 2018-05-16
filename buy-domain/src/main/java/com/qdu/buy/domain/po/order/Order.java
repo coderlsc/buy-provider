@@ -47,7 +47,7 @@ public class Order {
 
     private String dateStr;
 
-    public String dateStr(){
+    public String getDateStr(){
         SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
         dateStr=simpleDateFormat.format(this.createTime);
         return dateStr;

@@ -36,7 +36,7 @@
 
                 <div class="am-tabs-bd">
                     <div class="am-tab-panel am-active">
-                        <form method= "post" action="" th:action="@{/purchaser/register}"  data-am-validator="data-am-validator">
+                        <form id="form1" method= "post" onsubmit="return false"   data-am-validator="data-am-validator">
 
                             <div class="user-name">
                                 <label for="companyName1"><i class="am-icon-edit"></i></label>
@@ -73,7 +73,7 @@
                             </div>
 
                             <div class="am-cf">
-                                <input type="submit" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
+                                <input type="button" onclick="noTips()" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
                             </div>
 
                         </form>
@@ -128,7 +128,7 @@
                             </label>
                         </div>
                         <div class="am-cf">
-                            <input type="submit" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
+                            <input type="button" onclick="noTips()" name="" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
                         </div>
 
                         <hr/>
@@ -170,7 +170,8 @@
     </div>
 
 
-    <script type="text/javascript">
+    <script th:inline="javascript">
+        /*<![CDATA[*/
 
             $(function(){
                //表单提交的时候 判断各种输入是否合法
@@ -186,8 +187,32 @@
 
             });
 
+            function noTips(){
+                var formParam = $("#form1").serialize();//序列化表格内容为字符串
+                $.ajax({
+                    type:'post',
+                    url:getURLPath()+'purchaser/register',
+                    data:formParam,
+                    cache:false,
+                    dataType:'json',
+                    success:function(data){
+                        if(data.result=='1'){
+                            if(confirm("注册成功 是否现在就去企业信息认证?")){
+                               window.location.href=getURLPath()+"/toConfirm?purchaserId"+data.id;
+                            }
+                            else{
+                                window.location.href=getURLPath()+"/toIndex";
+                            }
+                        }
+                        else{
+                            alert(data.msg);
+                        }
+                    }
+                });
+            }
 
-        function sendMobileCode(phone,msg){
+
+            function sendMobileCode(phone,msg){
             if ($.trim($(phone).val()).length == 0) {
                 msg.html('手机号没有输入');
                 $(phone).focus();
@@ -268,10 +293,13 @@
             });
         }
 
+        function  getURLPath() {
+            var contextPath=[[${#httpServletRequest.getScheme()}]]+"://"+[[${#httpServletRequest.getServerName()}]] + ":"+ [[ ${#httpServletRequest.getServerPort()}]]  + [[${#httpServletRequest.getContextPath()}]] + "/";
+            return contextPath;
+        }
 
 
-
-
+        /*]]>*/
     </script>
 </div>
 </body>

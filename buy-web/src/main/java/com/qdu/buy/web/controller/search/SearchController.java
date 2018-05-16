@@ -1,9 +1,13 @@
 package com.qdu.buy.web.controller.search;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.qdu.buy.UpDownService;
 import com.qdu.buy.domain.po.content.Content;
 import com.qdu.buy.domain.po.query.ItemPageQuery;
 import com.qdu.buy.domain.po.query.SearchQuery;
+import com.qdu.buy.domain.po.search.Item;
 import com.qdu.buy.domain.po.search.ItemCat;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.lang.Page;
@@ -13,12 +17,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import java.net.URLDecoder;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import static com.sun.tools.doclint.Entity.image;
 
 @Controller
 @Slf4j
@@ -31,6 +43,9 @@ public class SearchController {
 
     @Autowired
     private RedisTemplate<String,Object> redisTemplate;
+
+    @Autowired
+    private UpDownService upDownService;
 
     @RequestMapping("/search")
     public String search(@RequestParam(value = "queryStr",defaultValue = "")String queryStr,
@@ -99,6 +114,26 @@ public class SearchController {
         query.setPageSize(pageSize);
         Page<SearchItemVo> result=searchService.queryItemPage(query);
         return  result;
+    }
+
+
+    @RequestMapping("/item/addItem")
+    @ResponseBody
+    public Map<String,Object> addItem(HttpServletRequest request,Item item,MultipartFile pic){
+        Map<String,Object> result=new HashMap<>();
+//        log.info(request.getAttribute("item").toString());
+        log.info(item.toString());
+        try{
+//           Item item1= JSON.parseObject(item,Item.class);
+           String image1=upDownService.updateHead(pic);
+           item.setImage(image1);
+           searchService.addItem(item);
+            result.put("request","1");
+        }catch(Exception e){
+            log.error("上传图片失败"+e.getMessage(),e);
+            result.put("result","0");
+        }
+        return result;
     }
 
 

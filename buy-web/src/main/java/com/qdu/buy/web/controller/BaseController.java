@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +81,9 @@ public class BaseController {
 
     //去认证页面
     @RequestMapping(value = "toConfirm")
-    public String toConfirm(){
+    public String toConfirm(@RequestParam("purchaserId")Long purchaserId, HttpServletRequest request,Model model){
+        request.setAttribute("purchaserId",purchaserId);
+        model.addAttribute("purchaserId",purchaserId);
         return "detailRegister";
     }
 

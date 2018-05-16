@@ -24,6 +24,8 @@ public class Item {
 
     private String status;
 
+    private Integer saleAmount;
+
     private Date createTime;
 
     private Date updateTime;

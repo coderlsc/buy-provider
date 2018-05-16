@@ -1,10 +1,10 @@
 package com.qdu.buy.web.controller;
 
-import com.bwton.dist.constant.Constants;
-import com.bwton.dist.core.data.vo.DataResponse;
-import com.bwton.dist.core.web.annotation.OperationLog;
-import com.bwton.dist.util.ExcelUtils;
 import com.qdu.buy.LicenseResourceService;
+import com.qdu.buy.lang.Constants;
+import com.qdu.buy.lang.DataResponse;
+import com.qdu.buy.lang.OperationLog;
+import com.qdu.buy.util.ExcelUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -44,7 +44,6 @@ public class ResourceController {
 
     @ApiOperation(value = "添加资源 并且返回资源id", notes = "添加资源 并且返回资源id")
     @PostMapping("/addResource")
-    @OperationLog(businFlag = "10551")
     public ModelAndView addResource(@RequestParam("file") MultipartFile resource,
                                     HttpServletRequest request){
         Long resourceid=null;

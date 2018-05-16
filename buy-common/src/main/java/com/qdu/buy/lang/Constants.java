@@ -6,7 +6,7 @@ import com.qdu.buy.util.EnumUtils;
 //常量类
 public class Constants {
 
-
+    public static final String JSONVIEW_KEY = "distJsonView";
     public static final String NeteaseAppKey="f97ed456401e416ba728d9f9bb8900f6";//网易云appkey
     public static final String APP_SECRET="fc274728ae204ce9a36645049f529290";//网易云密钥
 

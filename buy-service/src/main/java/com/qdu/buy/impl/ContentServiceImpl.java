@@ -1,6 +1,5 @@
 package com.qdu.buy.impl;
 
-import com.bwton.dist.constant.Constants;
 import com.qdu.buy.content.ContentService;
 import com.qdu.buy.dao.content.ContentCatDao;
 import com.qdu.buy.dao.content.ContentDao;

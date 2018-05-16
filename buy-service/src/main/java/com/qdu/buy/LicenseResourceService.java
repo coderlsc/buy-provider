@@ -1,9 +1,7 @@
 package com.qdu.buy;
 
-import com.bwton.dist.exception.BusinessException;
-import com.qdu.buy.domain.dto.ResourceDto;
 import com.qdu.buy.domain.po.resource.LicenseResource;
-import io.swagger.annotations.License;
+import com.qdu.buy.lang.BusinessException;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,12 +1,10 @@
 package com.qdu.buy.impl;
 
-import com.bwton.dist.core.data.vo.DataResponse;
-import com.bwton.dist.core.service.BaseService;
-import com.bwton.dist.exception.BusinessException;
 import com.qdu.buy.LicenseResourceService;
-//import com.qdu.buy.dao.ResourceDao;
 import com.qdu.buy.dao.resource.LicenseResourceDao;
 import com.qdu.buy.domain.po.resource.LicenseResource;
+import com.qdu.buy.lang.BusinessException;
+import com.qdu.buy.lang.DataResponse;
 import com.qdu.buy.util.FileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
@@ -19,19 +17,12 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.UUID;
 
-//import com.qiniu.api.auth.digest.Mac;
-//import com.qiniu.api.config.Config;
-//import com.qiniu.api.io.IoApi;
-//import com.qiniu.api.io.PutExtra;
-//import com.qiniu.api.io.PutRet;
-//import com.qiniu.api.rs.PutPolicy;
-
 /**
  * Created by lsc on 2018/1/24.
  */
 @Slf4j
 @Service
-public class LicenseResourceServiceImpl extends BaseService implements LicenseResourceService {
+public class LicenseResourceServiceImpl  implements LicenseResourceService {
 
     @Autowired
     private LicenseResourceDao licenseResourceDao;
@@ -53,9 +44,9 @@ public class LicenseResourceServiceImpl extends BaseService implements LicenseRe
     @Override
     public Long insert(LicenseResource resource) {
         resource.setCreateTime(new Date());
-        resource.setCreateUser(this.getCurrentUser().getUserName());
+        resource.setCreateUser("admin");
         resource.setUpdateTime(new Date());
-        resource.setUpdateUser(this.getCurrentUser().getUserName());
+        resource.setUpdateUser("admin");
         licenseResourceDao.insert(resource);
         return resource.getId();
     }
@@ -79,9 +70,9 @@ public class LicenseResourceServiceImpl extends BaseService implements LicenseRe
             licenseResource.setResourceNewName(newName);//保存文件新名字
             licenseResource.setResourceUploadPatch(uploadPath+"/"+newName);//直接可以访问的路径
             licenseResource.setCreateTime(new Date());
-            licenseResource.setCreateUser(this.getCurrentUser().getUserName());
+            licenseResource.setCreateUser("admin");
             licenseResource.setUpdateTime(new Date());
-            licenseResource.setUpdateUser(this.getCurrentUser().getUserName());
+            licenseResource.setUpdateUser("admin");
             licenseResourceDao.insert(licenseResource);
             return licenseResource.getId();
         }catch(Exception e){

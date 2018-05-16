@@ -21,6 +21,7 @@ public class SearchItemVo implements Serializable {
     private String category_name;
     private String item_desc;
     private Date createTime;
+    private Integer saleAmount;//销量
     private String dateStr;//日期时间的字符串格式
     private List<String> images;//展示的图片链接集合
     private String smallImage;//小图标

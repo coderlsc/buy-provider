@@ -80,7 +80,7 @@ public class CartServiceImpl implements CartService {
             cartDao.deleteCartByUserIdandItemId(cartInfo.getItemId(),userId);
             Item item=new Item();
             item.setId(cartInfo.getItemId());
-            item.setNum(item.getNum()-cartInfo.getNumber());
+            item.setNum(searchService.getIntroduction(cartInfo.getItemId()+"").getNum()-cartInfo.getNumber());
             itemDao.updateByPrimaryKeySelective(item);
             try{
                 redisTemplate.delete("item_"+cartInfo.getItemId());

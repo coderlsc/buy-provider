@@ -92,6 +92,61 @@ public class AdminController {
     }
 
 
+    @RequestMapping(value="admin_info")
+    public String v(){
+        return "admin_info";
+    }
+
+
+    @RequestMapping(value = "/invalidateAdmin")
+    public String invalidateAdmin(HttpServletRequest request){
+        HttpSession session=request.getSession();
+        Admin admin=(Admin)session.getAttribute("admin");
+        if(admin==null){
+
+        }
+        else
+        {
+            session.removeAttribute("admin");//退出账号
+        }
+        return "forward:/adminLogin";
+    }
+
+
+    @PostMapping(value = "/modifyPwd")
+    @ResponseBody
+    public Map<String,Object> modifyPwd(String newpwd,String oldpwd, HttpServletRequest request) throws Exception {
+        Map<String,Object> map=new HashMap<>();
+        //获取登录用户名和密码
+        Admin admin=(Admin)request.getSession().getAttribute("admin");
+        HttpSession session=request.getSession();
+        if(admin==null){
+            map.put("result","2");
+            map.put("msg","您尚未登录");
+        }
+        else{
+            if(admin.getPassword().equals(oldpwd)){
+                map.put("result","0");
+                map.put("msg","原密码不正确！");
+            }
+            else {
+                Admin admin1=new Admin();
+                admin1.setId(admin.getId());
+                admin1.setPassword(newpwd);
+                adminService.updateByPrimaryKeySelective(admin1);
+                map.put("result","1");
+                map.put("msg","修改成功！ 请重新登录");
+                session.removeAttribute("admin");
+            }
+
+        }
+        return map;
+    }
+
+
+
+
+
 
 //    @PostMapping(value = "/register")
 //    public ModelAndView register(Admin admin, HttpServletRequest request) throws Exception {

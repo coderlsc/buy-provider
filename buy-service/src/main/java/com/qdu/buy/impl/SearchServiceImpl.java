@@ -5,6 +5,7 @@ import com.qdu.buy.dao.search.ItemDao;
 import com.qdu.buy.dao.search.ItemDescDao;
 import com.qdu.buy.domain.po.query.ItemPageQuery;
 import com.qdu.buy.domain.po.query.SearchQuery;
+import com.qdu.buy.domain.po.search.Item;
 import com.qdu.buy.domain.po.search.ItemCat;
 import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.lang.Page;
@@ -13,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -67,6 +69,16 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public List<ItemCat> queryCateList() {
     return itemCatMapper.queryCateList();
+    }
+
+    @Override
+    public void addItem(Item item){
+        item.setSaleAmount(0);
+        item.setCreateTime(new Date());
+        item.setCreateUser("admin");
+        item.setUpdateTime(new Date());
+        item.setUpdateUser("admin");
+        itemDao.insert(item);
     }
 
 }
