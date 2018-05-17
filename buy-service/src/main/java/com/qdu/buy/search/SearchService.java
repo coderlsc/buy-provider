@@ -21,4 +21,8 @@ public interface SearchService {
     List<ItemCat> queryCateList();
 
     void addItem(Item item);
+
+    void updateItem(Item item);
+
+    void deleItem(Long itemId);
 }

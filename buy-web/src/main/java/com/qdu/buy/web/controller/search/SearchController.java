@@ -13,6 +13,7 @@ import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.lang.Page;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -131,6 +132,69 @@ public class SearchController {
             result.put("request","1");
         }catch(Exception e){
             log.error("上传图片失败"+e.getMessage(),e);
+            result.put("result","0");
+        }
+        return result;
+    }
+
+
+
+    @RequestMapping("/viewItemDetail")
+    @ResponseBody
+    public Map<String,Object> viewItemDetail(@RequestParam("itemId")String itemId) throws Exception {
+        //转码 防止乱码
+        Map<String,Object> map=new HashMap<>();
+        SearchItemVo searchResult=new SearchItemVo();
+        try{
+            searchResult=(SearchItemVo) redisTemplate.opsForValue().get("item_"+itemId);
+            if(searchResult!=null){
+                log.info("redis中查询到商品详情数据 不需从mysql中查询");
+            }
+            else{
+                searchResult= searchService.getIntroduction(itemId);
+                redisTemplate.opsForValue().set("item_"+itemId,searchResult);
+            }
+        }catch(Exception e){
+            log.error("获取缓存失败"+e.getMessage(),e);
+            searchResult= searchService.getIntroduction(itemId);
+        }
+        map.put("result",searchResult);
+        //把结果传递给页面
+        return map;
+    }
+
+
+    @RequestMapping("/item/updateItem")
+    public String updateItem(HttpServletRequest request,Item item){
+        log.info(item.toString());
+        try{
+//           Item item1= JSON.parseObject(item,Item.class);
+            searchService.updateItem(item);
+            redisTemplate.delete("item_"+item.getId());
+        }catch(Exception e){
+            log.error("修改产品失败"+e.getMessage(),e);
+        }
+        return "item_list";
+    }
+
+    @RequestMapping("/item/deleItem")
+    @ResponseBody
+    public Map<String,Object> deleItem(HttpServletRequest request,String ids){
+        Map<String,Object> result=new HashMap<>();
+        log.info(ids.toString());
+        try{
+            String[] bid=ids.split("-");
+                for(String itemId:bid){
+                    searchService.deleItem(Long.valueOf(itemId));
+                    try{
+                        redisTemplate.delete("item_"+itemId);
+                    }catch(Exception ex){
+                        log.error("删除缓存失败!"+ ex.getMessage(),ex);
+                    }
+            }
+            result.put("result","1");
+        }catch(Exception e){
+            log.error("删除失败"+e.getMessage(),e);
             result.put("result","0");
         }
         return result;

@@ -335,16 +335,16 @@
          function del(ids){
              if(confirm("您确定要删除并且清空已选信息吗?")){
                  $.ajax({
-                     url:getURLPath()+"content/deleteContent",
+                     url:getURLPath()+"item/deleItem",
                      data:"ids="+ids,
                      dataType:"json",
                      type:"post",
                      success:function(data){
-                         if(data.result=="delesuccess"){
-                             window.location.href=getURLPath()+"admin/advertising";
+                         if(data.result=="1"){
+                             window.location.href=getURLPath()+"admin/item_list";
                          }
                          else{
-                             alert("请稍后再试..");
+                             alert("删除失败 请稍后再试..");
                          }
                      }
 
@@ -352,101 +352,52 @@
              }
 
          }
+
+         function convertStatus(b){
+             if(b=='1'){
+                 return "上架";
+             }
+             else{
+                 return "下架";
+             }
+
+         }
          function showinfo(id){
              $.ajax({
-                 url:getURLPath()+"content/queryContent",
-                 data:"id="+id,
+                 url:getURLPath()+"viewItemDetail",
+                 data:"itemId="+id,
                  dataType:"json",
                  type:"post",
                  success:function(data){
-                     var content=data;
+                     var content=data.result;
                      var html="";
                      if(to_update==true){
                          //不只读 是去更改的 要加上form表单的
-                         html+="<form onkeydown='if(event.keyCode==13)return false;' class='form-horizontal' id='form' action='"+getURLPath()+"content/updateContent' method='post'>" +
-                             "<input type='hidden' name='id' value='"+content.id+"'/>"+
-                             "类别：<input required name='contentCat.name'  class='form-control' type='text' value='"+content.contentCat.name+"'/><br>" +
-                             "排序:<input required name='contentCat.sortOrder'  class='form-control' type='text' value='"+content.contentCat.sortOrder+"'/><br>" +
-                             "链接地址:<input required name='url'  class='form-control' type='text' value='"+content.url+"'/><br>" +
-                             "加入时间:<input type='text' required name='dateStr'  class='form-control' value='"+content.datestr+"' />"+
-                             "状态:<input required name='total' type='text' class='form-control' value='"+content.contentCat.status+"' /><br>"+
+                         html+="<form onkeydown='if(event.keyCode==13)return false;' class='form-horizontal' id='form' action='"+getURLPath()+"item/updateItem' method='post'>" +
+                             "产品编号:<input readonly='readonly' type='text' name='id' value='"+content.id+"'/><br>"+
+                             "产品标题:<textarea required='required'  name='title' value='"+content.title+"'/><br>"+
+                             "产品卖点描述:<textarea required='required'  name='sellPoint' value='"+content.sell_point+"'/><br>"+
+                             "价格:<input required='required' type='text'  name='sellPoint' value='"+content.price+"'/><br>"+
+                             "库存:<input required='required'  type='number' name='sellPoint' value='"+content.num+"'/><br>"+
+                             "产品类别：<input readonly='readonly' required   class='form-control' type='text' value='"+content.category_name+"'/><br>" +
+                             "创建时间:<input required readonly='readonly'  class='form-control' type='text' value='"+content.dateStr+"'/><br>" +
+                             "状态:<input readonly='readonly' required name='status' type='text' class='form-control' value='"+convertStatus(content.status)+"'/><br>"+
                              "<button type='submit' class='btn btn-primary'>提交</button></form>";
-                         html+="<button name='"+content.id+"' class='uploadpic btn btn-primary' id='"+content.id+"'>上传图片</button><button class='delepic btn btn-primary'>删除图片</button><br>";
                      }
                      else{
                          //只读
-                         html="类别：<input readonly class='form-control' type='text' value='"+content.contentCat.name+"'/><br>" +
-                             "排序:<input readonly class='form-control' type='text' value='"+content.contentCat.sortOrder+"'/><br>" +
-                             "链接地址:<input readonly class='form-control' type='text' value='"+content.url+"'/><br>" +
-                             "加入时间:<input readonly class='form-control' type='text' value='"+content.datestr+"' /><br>" +
-                             "状态:<input type='text' class='form-control' value='"+content.contentCat.status+"' /><br>";
+                         html+="产品编号:<input readonly='readonly' type='text' name='id' value='"+content.id+"'/><br>"+
+                         "产品标题:<textarea required='required' readonly='readonly'  name='title' value='"+content.title+"'/><br>"+
+                         "产品卖点描述:<textarea required='required' readonly='readonly'  name='sellPoint' value='"+content.sell_point+"'/><br>"+
+                         "价格:<input required='required' type='text' readonly='readonly'  name='sellPoint' value='"+content.price+"'/><br>"+
+                         "库存:<input required='required'  type='number' readonly='readonly' name='sellPoint' value='"+content.num+"'/><br>"+
+                         "产品类别：<input readonly='readonly' required   class='form-control' type='text' value='"+content.category_name+"'/><br>" +
+                         "创建时间:<input required readonly='readonly'  class='form-control' type='text' value='"+content.dateStr+"'/><br>" +
+                         "状态:<input readonly='readonly' required name='status' type='text' class='form-control' value='"+convertStatus(content.status)+"'/><br>";
                      }
-                     html+="封面<img style='margin-left:20px; width: 400px;  height:200px' src='"+content.pic+"'/>";
-                     if(to_update==true){
-                         html+="<input id='"+content.id+"' type='checkbox' name='selectedpic'/>";
-                     }
-                     if(to_update==true){
-                         var ss= "<input type='file' id='pic' name='pic' />";
-                         html+=ss;
-                     }
+                     html+="产品效果图<img style='margin-left:20px; width: 400px;  height:200px' src='"+content.smallImage+"'/>";
                      $(".modal-body").html(html);
                      $("#myModal").modal("show");
-                     $("button.delepic").click(function(){
-                         var array_selectedpic=$("input[name='selectedpic']:checked");
-                         if(array_selectedpic.length==0){
-                             alert("未选择图片！");
-                             return;
-                         }
-                         if(confirm("确认要删除此轮播图片吗?")){
-                             $.ajax({
-                                 url:getURLPath()+"content/deleteContentPic",
-                                 data:"id="+id,
-                                 type:"post",
-                                 dataType:"json",
-                                 success:function(data){
-                                     if(data.result=="success"){
-                                         alert("图片删除成功");
-                                         showinfo(id);
-                                         return ;
-                                     }
-                                     else {
-                                         alert("删除失败 请稍后再试..");
-                                     }
-                                 },
-                                 error:function(){
-                                     alert("服务器繁忙...");
-                                 }
-
-                             });
-                         }
-                     });
-
-                     $("button.uploadpic").click(function(){
-                         $.ajaxFileUpload({
-                             url:getURLPath()+"content/changePic",
-                             type:"post",
-                             fileElementId:"pic",
-                             data:{
-                                 "id":id
-                             },
-                             dataType:"json",
-                             success:function(data){
-                                 var res=data.result;
-                                 if(res=="success"){
-                                     alert("设置成功！");
-                                     showinfo(id);
-                                     return ;
-                                 }else{
-                                     alert("请选择图片!");
-                                 }
-                             },
-                             error:function(){
-                                 alert("上传失败 请稍后再试");
-                             }
-
-                         });
-
-                     });
                      $("button#submit").click(function(){
                          $("#form").submit();
                      });

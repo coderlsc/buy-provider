@@ -48,7 +48,7 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" useGeneratedKeys="true" keyProperty="id" keyColumn="id" parameterType="com.qdu.buy.domain.po.search.Item" >
-    insert into item ( title, sell_point,
+    insert into  item( title, sell_point,
       price, num, barcode, 
       image, cid, status, 
       create_time, update_time, create_user, 

@@ -11,6 +11,7 @@ import com.qdu.buy.domain.vo.search.SearchItemVo;
 import com.qdu.buy.lang.Page;
 import com.qdu.buy.search.SearchService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -79,6 +80,20 @@ public class SearchServiceImpl implements SearchService {
         item.setUpdateTime(new Date());
         item.setUpdateUser("admin");
         itemDao.insert(item);
+    }
+
+
+    @Override
+    public void updateItem(Item item){
+        item.setUpdateTime(new Date());
+        item.setUpdateUser("admin");
+        itemDao.updateByPrimaryKeySelective(item);
+    }
+
+
+    @Override
+    public void deleItem(Long itemId){
+        itemDao.deleteByPrimaryKey(itemId);
     }
 
 }
