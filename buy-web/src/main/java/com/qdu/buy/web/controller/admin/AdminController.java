@@ -55,8 +55,35 @@ public class AdminController {
         return map;
     }
 
+    @PostMapping(value = "/login2")
+    @ResponseBody
+    public Map<String,Object> login2(@RequestBody  Admin admin, HttpServletRequest request) throws Exception {
+        Map<String,Object> map=new HashMap<>();
+        log.info("进入管理员login部分-------------"+admin.toString());
+        //获取登录用户名和密码
+        String username = admin.getUsername();
+        String password = admin.getPassword();
+        Admin admin1=adminService.queryAdminByUsernameandPwd(username,password);
+        ModelAndView result=new ModelAndView();
+        HttpSession session=request.getSession();
+        if(admin1==null){
+            result.setViewName("admin_login");
+            result.addObject("msg","用户名或密码错误");
+            map.put("result","0");
+        }
+        else{
+            result.setViewName("redirect:/admin/toIndex");
+            result.addObject("admin",admin1);
+            session.setAttribute("admin",admin1);
+            session.setMaxInactiveInterval(1800);
+            map.put("result","1");
+        }
+        return map;
+    }
+
 
     @PostMapping(value = "/register")
+    @ResponseBody
     public Map<String,Object> register(@RequestBody Map map) throws Exception {
         log.info("注册------------------");
         Map<String,Object> result=new HashMap<>();
@@ -64,7 +91,12 @@ public class AdminController {
         String password =  map.get("password")+"";
         Admin admin=adminService.queryAdminByUsernameandPwd(userName,password);
         if(admin==null){
-            adminService.insert(admin);
+            Admin admin1=new Admin();
+            admin1.setPassword(password);
+            admin1.setUsername(userName);
+            admin1.setEmail(map.get("email")+"");
+            admin1.setPhone(map.get("phone")+"");
+            adminService.insert(admin1);
             result.put("success","1");
         }
         else{
