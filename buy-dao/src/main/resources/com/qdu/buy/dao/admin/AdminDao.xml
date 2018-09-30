@@ -23,13 +23,17 @@
     delete from admin
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.qdu.buy.domain.po.admin.Admin" >
-    insert into admin (id, username, password, 
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.qdu.buy.domain.po.admin.Admin" >
+    insert into admin (username, password,
       phone, email, created, 
       updated)
-    values (#{id,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, 
-      #{updated,jdbcType=TIMESTAMP})
+    values (
+    #{username,jdbcType=VARCHAR},
+    #{password,jdbcType=VARCHAR},
+    #{phone,jdbcType=VARCHAR},
+    #{email,jdbcType=VARCHAR},
+    #{created,jdbcType=TIMESTAMP},
+    #{updated,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.qdu.buy.domain.po.admin.Admin" >
     insert into admin

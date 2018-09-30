@@ -3,6 +3,7 @@ package com.qdu.buy.web.controller.admin;
 
 import com.qdu.buy.LicenseResourceService;
 import com.qdu.buy.admin.AdminService;
+import com.qdu.buy.domain.po.User;
 import com.qdu.buy.domain.po.admin.Admin;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
@@ -26,9 +27,6 @@ public class AdminController {
 
     @Autowired
     private AdminService adminService;
-
-    @Autowired
-    private LicenseResourceService licenseResourceService;
 
 
     @PostMapping(value = "/login")
@@ -55,6 +53,24 @@ public class AdminController {
             map.put("result","1");
         }
         return map;
+    }
+
+
+    @PostMapping(value = "/register")
+    public Map<String,Object> register(@RequestBody Map map) throws Exception {
+        log.info("注册------------------");
+        Map<String,Object> result=new HashMap<>();
+        String userName = map.get("username")+"";
+        String password =  map.get("password")+"";
+        Admin admin=adminService.queryAdminByUsernameandPwd(userName,password);
+        if(admin==null){
+            adminService.insert(admin);
+            result.put("success","1");
+        }
+        else{
+            result.put("success","0");
+        }
+        return result;
     }
 
 

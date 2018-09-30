@@ -6,6 +6,8 @@ import com.qdu.buy.domain.po.admin.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 @Service
 public class AdminServiceImpl implements AdminService {
 
@@ -24,6 +26,8 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public int insert(Admin record) {
+        record.setUpdated(new Date());
+        record.setCreated(new Date());
             return adminDao.insert(record);
     }
 

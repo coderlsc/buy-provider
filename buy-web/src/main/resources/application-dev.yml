@@ -25,7 +25,7 @@ spring:
       enable: true
       force: true
     multipart:
-      location: D:/dist
+      location: /usr/local/project/upload
 
   mvc:
     dispatch-options-request: true
@@ -115,7 +115,7 @@ token:
 global:
   workerId: 1
   sysName: 企业采购平台
-  uploadBasePath: D:/dist
+  uploadBasePath: /usr/local/project/upload
   activityBaseJsPath: https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js,http://api.msx.bwton.com/api_h5/assets/js/Hextech.js
 
 msxcxApi:
