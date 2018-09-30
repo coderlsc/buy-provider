@@ -89,7 +89,7 @@ public class AdminController {
         Map<String,Object> result=new HashMap<>();
         String userName = map.get("username")+"";
         String password =  map.get("password")+"";
-        Admin admin=adminService.queryAdminByUsernameandPwd(userName,password);
+        Admin admin=adminService.queryAdminByUsernameandPwd(userName,null);
         if(admin==null){
             Admin admin1=new Admin();
             admin1.setPassword(password);
