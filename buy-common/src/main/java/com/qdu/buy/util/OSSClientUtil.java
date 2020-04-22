@@ -23,10 +23,10 @@ import org.springframework.web.multipart.MultipartFile;
 @Slf4j
 public class OSSClientUtil {
     // endpoint以杭州为例，其它region请按实际情况填写
-    protected static String endpoint = "oss-cn-beijing.aliyuncs.com";
-    protected static String accessKeyId  = "LTAI9H79hbMbt0E1";
-    protected static String accessKeySecret  = "2ER6wyNBQWNvMeGlTfsFQa2IsyQ8f6";
-    protected static String bucketName  = "buy-test";
+    protected static String endpoint = "";
+    protected static String accessKeyId  = "";
+    protected static String accessKeySecret  = "";
+    protected static String bucketName  = "";
     //文件存储目录
     private String filedir = "image/";
 
