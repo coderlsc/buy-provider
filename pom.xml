@@ -28,7 +28,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <javax.validation.version>1.1.0.Final</javax.validation.version>
-        <shiro.version>1.3.2</shiro.version>
+        <shiro.version>1.7.0</shiro.version>
         <shiro.redis.version>2.4.2.1-RELEASE</shiro.redis.version>
         <!--<spring.session.version>1.3.1.RELEASE</spring.session.version>-->
         <kaptcha.version>2.3.2</kaptcha.version>
