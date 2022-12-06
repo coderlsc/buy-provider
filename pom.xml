@@ -50,7 +50,7 @@
         <org.hibernate.validator.version>5.1.3.Final</org.hibernate.validator.version>
         <googlecode.jslint4java.version>2.0.5</googlecode.jslint4java.version>
         <org.apache.poi.version>3.17</org.apache.poi.version>
-        <commons.net.version>3.6</commons.net.version>
+        <commons.net.version>3.9.0</commons.net.version>
         <javacsv.version>2.0</javacsv.version>
         <rocketmq.client.version>4.2.0</rocketmq.client.version>
     </properties>
